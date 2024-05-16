@@ -9,6 +9,7 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@daveholst/nx-python-django": "^0.0.1",
     "@nx/cypress": "19.0.4",
     "@nx/devkit": "19.0.4",
     "@nx/eslint": "19.0.4",
