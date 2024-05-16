@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Header {
+  margin-top: 10vh;
+  width: 100%;
+  height: 100%;
+}
+
+.contentWraper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.HeaderBackgroundImage {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 75%;
+  margin: 0 auto;
+  height: 45vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  overflow: hidden;
+  border-bottom: 5px solid var(--primary-color);
+  border-radius: 0.8rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  opacity: 0.2;
+  display: none;
+}
+
+.HeaderBackgroundImage:hover .overlay {
+  display: block;
+}
+
+.ButtonsStyling {
+  color: var(--white-color);
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  align-items: center;
+}
+
+.MainButtons {
+  z-index: 2;
+  border-radius: 3px;
+  margin: 2px 0;
+  background-color: var(--primary-color);
+  padding: 2px 3px;
+}
+
+.MainButtons:hover {
+  opacity: 0.9;
+}
+
+.paragraphs {
+  padding: 0;
+  z-index: 2;
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  text-shadow: 2px 2px 1px var(--primary-color);
+}
+
+.DownPara {
+  position: relative;
+  z-index: 5;
+  padding: 0;
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 2px var(--primary-color);
+}
+
+.MainDiv {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.RightSide {
+  width: 70%;
+  margin-top: 50px;
+  border-right: 1px solid var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.RightSide h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.RightSide .RightDesc {
+  font-size: 15px;
+  padding: 0 20px 0 0;
+  font-weight: 400;
+  color: var(--gray);
+}
+.smallblogcardsimages {
+  border: 2px solid var(--primary-color);
+}
+
+.LeftSides {
+  width: 25%;
+  height: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ledtsideheading {
+  font-size: 25px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.papers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-left: 0px !important;
+}
+
+.MostReadBox {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: start !important;
+  flex-wrap: nowrap;
+}
+.ContentGrid {
+  padding-top: 0px !important;
+}
+.ContentDetails a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.ContentDetails a:hover {
+  text-decoration: underline;
+}
+
+.MainGrid1 {
+  display: block;
+  width: 100%;
+  flex-direction: row;
+}
+
+.quotes {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  font-size: 17px;
+}
+
+@media (max-width: 1149px) {
+  .RightSide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .RightSide h1 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .RightSide p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray);
+  }
+
+  .LeftSides {
+    width: 100%;
+  }
+
+  .ContentDetails a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .DownPara {
+    padding: 0;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .contentWraper {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .RightSide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .RightSide h1 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .RightSide p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray);
+  }
+
+  .LeftSides {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .ContentDetails a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  .MainDiv {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .MainGrid {
+    flex-wrap: nowrap !important;
+  }
+
+  .MostReadBox {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .papers {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0px !important;
+  }
+}

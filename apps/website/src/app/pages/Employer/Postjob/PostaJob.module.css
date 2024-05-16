@@ -1,0 +1,11 @@
+.PostAjobWrapper {
+  background-color: var(--white-color);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+  .PostAjobWrapper {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,41 @@
+.dash {
+  padding-right: 40px;
+  width: 100%;
+}
+.dashboard-outer {
+  /* position: relative; */
+  background: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 7px 18px var(--light-shade-blue-gray);
+  margin-bottom: 3rem;
+  padding-top: 30px;
+}
+
+.upper-title-box {
+  margin-bottom: 40px;
+}
+.text,
+p {
+  font-size: 15px;
+  color: var(--dimgray);
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+.upper-title-box h3 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 41px;
+  color: var(--dark-shade-gray);
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 850px) {
+  .widget-content {
+    width: 100%;
+  }
+  .dash {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+  }
+}

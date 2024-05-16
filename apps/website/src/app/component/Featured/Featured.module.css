@@ -1,0 +1,97 @@
+/* PopularJobCategories.module.css */
+.popular-job-category {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 1.5rem 0rem 1rem 2rem;
+  border: 0.1px solid var(--light-gray-color);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px var(--light-gray-color);
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+  width: 40%;
+  margin: 1rem;
+}
+
+.warapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.title:hover {
+  color: var(--primary-color);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.opening {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.NotFound {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  /* margin-right: 2rem; */
+  font-size: 35px;
+  color: var(--primary-color);
+  transition: color 0.2s; /* Add transition for color change */
+}
+
+.popular-job-category:hover .icon {
+  color: var(--whitesmoke); /* Change icon color on hover */
+}
+
+.icon-bg {
+  margin-right: 2rem;
+  padding: 1rem;
+  background-color: var(--light-gray);
+  border-radius: 10%;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.popular-job-category:hover .icon-bg {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.heading {
+  text-align: center;
+  margin-top: 3rem;
+}
+.heading h2 {
+  font-size: 25px;
+}
+.heading p {
+  font-size: 15px;
+  color: var(--gray);
+}
+@media screen and (max-width: 767px) {
+  .warapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .popular-job-category {
+    width: 90%;
+  }
+}

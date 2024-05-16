@@ -1,7 +1,26 @@
 {
   "recommendations": [
-    "nrwl.angular-console",
     "esbenp.prettier-vscode",
-    "ms-playwright.playwright"
+    "firsttris.vscode-jest-runner",
+    "mohsen1.prettify-json",
+    "donjayamanne.githistory",
+    "vivaxy.vscode-conventional-commits",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.makefile-tools",
+    "christian-kohler.path-intellisense",
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "pmneo.tsimporter",
+    "Gydunhn.typescript-essentials",
+    "ms-vscode-remote.remote-wsl",
+    "rvest.vs-code-prettier-eslint",
+    "hb432.prettier-eslint-typescript",
+    "donjayamanne.python-extension-pack",
+    "KevinRose.vsc-python-indent",
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "mikoz.isort-formatter",
+    "jawandarajbir.react-vscode-extension-pack",
+    "burkeholland.simple-react-snippets"
   ]
 }

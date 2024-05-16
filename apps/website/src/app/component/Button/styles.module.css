@@ -1,0 +1,27 @@
+.btn {
+  border: none;
+  /* padding: 8px 10px; */
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--white-color);
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 8px;
+  font-weight: 400;
+  margin-left: 1px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.btn:hover {
+  background-color: var(--primary-btn-color-hover);
+}
+
+@media screen and(max-width:636px) {
+  .btn {
+    width: 540px;
+  }
+}

@@ -1,0 +1,16 @@
+.inputstyles {
+}
+.inputstyles:focus {
+  border: none;
+  border-width: 0rem;
+}
+
+.findjobswrapwe {
+  width: 75%;
+  margin: 0 auto;
+}
+@media (maxwidth: 600px) {
+  .findjobswrapwe {
+    width: 95%;
+  }
+}

@@ -1,0 +1,27 @@
+/* EmailVerification.module.css */
+
+.emailVerificationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.emailVerification {
+  width: 800px;
+  padding: 1rem;
+  border: 1px solid var(--light-gray-color);
+  border-radius: 8px;
+  background-color: red;
+  text-align: center;
+}
+
+.emailVerification h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.emailVerification p {
+  font-size: 1em;
+  color: var(--dimgray);
+}

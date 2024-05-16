@@ -1,0 +1,142 @@
+.dashboard {
+  position: relative;
+  top: 50px;
+  margin-bottom: 3rem;
+}
+
+.maincolor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-shade-blue-gray);
+  flex-direction: row;
+}
+
+.first {
+  border-radius: 30px;
+  margin: 2rem;
+  padding: 15px 20px;
+  width: 75%;
+  background-color: var(--white-color);
+}
+
+.first h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.form {
+}
+
+.formInputs {
+  display: flex;
+  gap: 10px;
+}
+.inputs {
+  width: 100%;
+}
+.form label {
+  margin-top: 1rem;
+}
+
+/* align-items: center; */
+.inputfeild {
+  border-radius: 0.375rem;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  background-color: var(--alice-blue);
+  color: var(--black) !important;
+  border: 2px solid transparent;
+  letter-spacing: 1px;
+}
+
+.inputfeild:focus {
+  border-color: var(--light-steel-blue);
+  /* Change the border color when the input is focused */
+  outline: none;
+  /* Remove the default outline */
+}
+
+.textarea {
+  width: 100%;
+  border-radius: 0.375;
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 0rem 1rem;
+  background-color: var(--alice-blue);
+
+  border: 2px solid transparent;
+  max-height: 22vh;
+}
+
+.textarea:focus {
+  border-color: var(--light-steel-blue);
+  outline: none;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  margin: 1rem 0rem 0rem 0rem;
+  height: 40px;
+  width: 6rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+}
+
+.second {
+  background-color: var(--alice-blue);
+  border-radius: 30px;
+  margin: 2rem;
+  padding: 2rem;
+  width: 45%;
+  display: flex;
+  letter-spacing: 1px;
+  padding: 6rem 0rem 6rem 1rem;
+}
+
+.smallcontent {
+  color: var(--shade-of-gray);
+  margin: 0px 0px 2rem 0px;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .first {
+    width: 95%;
+  }
+
+  .maincolor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .second {
+    background-color: var(--alice-blue);
+    border-radius: 10px;
+    margin: 0.5rem 1rem 1rem 1rem;
+    padding: 2rem;
+    width: 95%;
+    display: flex;
+    padding: 6rem 0rem 6rem 1rem;
+  }
+
+  .smallcontent {
+    margin: 0px 0px 2rem 0px;
+  }
+  .formInputs {
+    display: block;
+  }
+}

@@ -1,0 +1,18 @@
+.employernav {
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9998;
+  width: 100%;
+  height: 75px;
+  padding: 0px 25px 0px 70px;
+  box-shadow: 0 1px 15px var(--box-shadow-blue-gray);
+}
+@media screen and (max-width: 767px) {
+  .employernav {
+    background-color: var(--white-color);
+    padding: 0px 25px 0px 110px;
+  }
+}

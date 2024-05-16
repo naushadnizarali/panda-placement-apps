@@ -1,0 +1,182 @@
+.resume_block {
+  position: relative;
+}
+
+.inner {
+  position: relative;
+  padding-left: 60px;
+  z-index: 1;
+  padding-bottom: 35px;
+}
+
+.name {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--Pale-Pink);
+  color: var(--crimson);
+  z-index: 2;
+}
+
+.title_box {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  /* margin-bottom: 30px; */
+  justify-content: space-between;
+}
+
+.info_box h6 {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--crimson);
+}
+
+.info_box {
+  position: relative;
+  margin-right: 20px;
+  width: 50%;
+}
+.info_box a {
+  color: var(--dimgray);
+  text-decoration: none;
+}
+@media (max-width: 450px) {
+  .info_box {
+    overflow: scroll;
+    width: 100% !important;
+  }
+}
+
+.info_box::-webkit-scrollbar {
+  display: none;
+}
+
+.edit_box {
+  display: flex;
+  align-items: center;
+}
+
+.year {
+  position: relative;
+  font-size: 13px;
+  padding: 5px 20px;
+  line-height: 15px;
+  font-weight: 500;
+  border-radius: 20px;
+  background: var(--light-shade-red);
+  color: var(--crimson);
+  margin-right: 10px;
+}
+
+.icons {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: var(--light-shade-blue-gray);
+  border-radius: 8px;
+  margin-right: 10px;
+  min-width: auto;
+  color: var(--primary-color);
+}
+
+.icons,
+select {
+  text-transform: none;
+}
+
+.text a {
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--dimgray);
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.edit_btns {
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .resume_block .inner {
+    padding-left: 45px;
+  }
+
+  .resume_block .edit_box {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 15px;
+    gap: 12px;
+  }
+
+  .resume_block .title_box {
+    flex-direction: column;
+  }
+
+  .info_box h5 {
+    font-size: 0.9rem;
+  }
+  .info_box span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .year {
+    position: relative;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 18px;
+    margin-right: 10px;
+  }
+  .edit_btns {
+    margin-top: 10px;
+  }
+  .icons {
+    width: 28px;
+    height: 28px;
+  }
+  .icons .trash {
+    height: 0.9em;
+    margin-bottom: 2px;
+  }
+}
+
+/* yourCard.module.css */
+
+/* .card {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+    padding: 10px;
+    text-align: center;
+}
+
+.cardText {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.row {
+    margin: 10px;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+} */
+
+/* Add more styling as needed */

@@ -1,0 +1,428 @@
+/* PopularJobCategories.module.css */
+
+.warapper {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  width: 100%;
+  padding: 10px 10px;
+  background-color: var(--white-color) !important;
+}
+.bar {
+  position: relative;
+  /* border: 1px solid red; */
+  background: var(--light-shade-grayish-blue);
+  /* background: var(--light-shade-grayish-blue); */
+  border-radius: 8px;
+  padding: 15px 20px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.bar h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--primary-color);
+  margin-bottom: 0px;
+}
+.leftside {
+  /* width: 20%; */
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+
+  /* position: absolute; */
+}
+
+.bar_right {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+.bar_right li {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 120px;
+  height: 12vh;
+  cursor: pointer;
+}
+.bar_right li:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  align-items: center;
+  width: 140px;
+}
+.bar_right li:nth-child(3) {
+  width: 140px;
+}
+.bar_right .totalCandidates {
+  border: 2px dotted var(--gray);
+  color: var(--gray);
+}
+.bar_right .shortlist {
+  border: 2px dotted var(--green);
+  color: var(--green);
+}
+.bar_right .pendings {
+  border: 2px dotted var(--goldenroad);
+}
+.bar_right .rejected {
+  border: 2px dotted var(--red-color);
+}
+.downloadButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.downloadButtons button:last-child {
+  margin-top: 10px;
+  width: 100%;
+}
+.tab_blue {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--primary-color);
+  margin-left: 115px;
+}
+
+.ui_item {
+  position: relative;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--white-color);
+  border: 1px solid var(--shade--blue-gray);
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  margin: 4px 0px;
+}
+.ui_block {
+  border: var(--dark-shade-gray) 1px solid;
+}
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.ui_item {
+  width: 48%;
+  border: 1px solid var(--lightgray);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--white-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 7px 18px var(--light-shade-blue-gray);
+}
+.ui_item_single {
+  width: 90%;
+  border: 1px solid var(--lightgray);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: var(--white-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 7px 18px var(--light-shade-blue-gray);
+}
+.ui_item:hover {
+  box-shadow: 0 7px 18px var(--box-shadow-blue-gray);
+}
+
+.ui_item:hover {
+  box-shadow: 0 0 3px 3px var(--box-shadow-blue-gray);
+}
+.blue_icon {
+  color: var(--primary-color);
+  background: var(--light-shade-blue);
+  position: relative;
+  display: block;
+  height: 80px;
+  width: 100%;
+  line-height: 70px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+.img_icon {
+  height: 80px;
+  width: 80px;
+}
+.main_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6rem;
+  border: 1px solid var(--gray);
+}
+.yellow_icon {
+  color: var(--goldenroad);
+  background: var(--pumkin);
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  font-size: 40px;
+  /* color: var(--primary-color); */
+  text-align: center;
+  border-radius: 8px;
+}
+.green_icon {
+  color: var(--green);
+  background: var(--light-green-color);
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+.right {
+  text-align: center;
+  width: 80%;
+  padding-left: 10px;
+  padding-left: 1rem;
+  padding-top: 5px;
+}
+
+.ui_blue {
+  color: var(--primary-color);
+}
+.ui_red {
+  color: var(--red-color);
+}
+.ui_yellow {
+  color: var(--goldenroad);
+}
+.ui_green {
+  color: var(--green);
+}
+.opening {
+  font-size: 15px;
+  color: var(--dark-shade-gray);
+  line-height: 26px;
+}
+.name {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--dark-shade-gray);
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.oneiconandname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.cardicons {
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+.oneiconandname p {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  color: var(--gray);
+  font-size: 14px;
+}
+.oneiconandname1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 0.5rem;
+}
+.oneiconandname1 p {
+  margin-top: 0.5rem;
+  margin-left: 0.7rem;
+  font-size: 12px;
+  color: var(--gray);
+}
+.oneiconandnamewrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skill_info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 10vh;
+  overflow: hidden;
+  padding: 5px 0px;
+  margin-bottom: 0.5rem;
+}
+.status {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5%;
+  /* margin-top: 5%; */
+}
+
+.item {
+  margin-right: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+.item p {
+  margin-bottom: 0rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.text {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--alice-blue);
+}
+.bookmark {
+  padding-right: 1rem;
+}
+.ui_icons {
+  background-color: var(--alice-blue);
+  padding: 5px;
+  border-radius: 5px;
+  /* color: var(--primary-color); */
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1255px) {
+  .oneiconandname1 p {
+    font-size: 10px;
+    margin-top: 0.3rem;
+    margin-left: 0.7rem;
+  }
+  .oneiconandname p {
+    font-size: 10px;
+    margin-top: 0.5rem;
+    margin-left: 0.7rem;
+  }
+  .text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .ui_item {
+    width: 100%;
+    /* height: 52vh; */
+  }
+  .bar {
+    display: contents;
+    background: var(--light-shade-grayish-blue);
+  }
+  .leftside {
+    width: 70%;
+    padding-left: 10px;
+  }
+  .bar_right {
+    width: 100%;
+    padding-left: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .downloadButtons {
+    /* padding-top: 15px ;  
+   padding-left: 10px ; */
+    display: inline-flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+  .oneiconandname1 p {
+    font-size: 12px;
+  }
+  .oneiconandname p {
+    font-size: 12px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .warapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 756px) {
+  .bar {
+    display: contents;
+    background: var(--light-shade-grayish-blue);
+  }
+  .bar_right {
+    width: 100%;
+  }
+  .ui_item {
+    width: 100%;
+    display: block;
+  }
+  .skill_info {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .oneiconandnamewrapper {
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+  .oneiconandname {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,31 @@
+.footer_wraper {
+  text-align: center;
+  text-align: start;
+  padding: 1rem;
+}
+
+.Box_1_iocn {
+  margin-top: 0.8rem;
+  display: flex;
+}
+.JobType_list {
+  text-decoration: none;
+  color: var(--gray) !important;
+  font-size: 1rem;
+}
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 13px;
+  padding-top: 0;
+  color: var(--gray);
+}
+.icon1 {
+  font-size: 24px;
+}
+/* @media (max-width: 767.98px) {
+    .HomeIcon{
+      font-size: 10px;
+    }
+  } */

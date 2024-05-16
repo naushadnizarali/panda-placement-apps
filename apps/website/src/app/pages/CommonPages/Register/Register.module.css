@@ -1,0 +1,103 @@
+.error {
+  font-size: 12px;
+  color: var(--red-color);
+}
+
+.btns {
+  background-color: var(--primary-color);
+}
+
+.backgroundImage {
+  background-image: url(../../../assets/BackgroundImage.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 38%;
+  border-radius: 20px;
+}
+
+.login_container {
+  display: flex;
+  align-items: center;
+  padding: 0rem 0rem 0rem 2rem;
+  /* height: 90vh; */
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .login_container {
+    display: flex;
+    align-items: center;
+    padding: 1.7rem;
+    /* height: 90vh; */
+  }
+}
+.InnerContainer {
+  width: 100%;
+  height: 95vh;
+  overflow: scroll;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.InnerContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.country_dropdown {
+  background-color: var(--white-color);
+  box-shadow:
+    0px 5px 5px -3px var(--box-shadows-black),
+    0px 8px 10px 1px var(--box-shadows-black),
+    0px 3px 14px 2px var(--box-shadows-black);
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+}
+
+.country_dropdown div:hover {
+  background-color: var(--light-gray-color);
+  border-radius: 0.1rem;
+}
+
+.country_dropdown::-webkit-scrollbar {
+  width: 12px;
+}
+
+.country_dropdown::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+  border-radius: 0.15rem;
+}
+
+.passwordStrength {
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.passwordStrength li {
+  margin-right: 20px;
+  color: var(--gray);
+  display: flex;
+  gap: 10px;
+}
+
+.valid {
+  color: var(--green) !important;
+  /* Green for valid criteria */
+}
+
+.invalid {
+  color: var(--red-color) !important;
+  /* Red for invalid criteria */
+}

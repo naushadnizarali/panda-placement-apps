@@ -1,0 +1,19 @@
+.buttonclass {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: none;
+  padding: 0rem 1rem 0rem 1rem;
+  color: var(--white-color);
+}
+.notfound {
+  color: var(--white-color);
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .notfound {
+    color: var(--white-color);
+    text-align: center;
+    margin-left: 15rem;
+  }
+}

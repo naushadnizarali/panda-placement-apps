@@ -1,0 +1,20 @@
+.header {
+  position: relative;
+  top: 60px;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--white-color);
+  /* background-color: var(--light-shade-blue-gray); */
+  color: var(--black);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.FindJobsContainer {
+  background-color: var(--light-shade-blue-gray);
+}
+.header p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 0%;
+}

@@ -1,0 +1,264 @@
+.cvmanager_wrapper {
+  position: relative;
+  top: 50px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  /* height: 100vh; */
+}
+
+.contentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.heading {
+  /* font-size: 1.8rem; */
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.leftSide {
+  flex: 0 0 50%;
+  margin: 1.8rem 2rem 0rem 0rem;
+  width: 52%;
+  height: 100%;
+}
+
+.modalContentGridforLessthen_5 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  height: 75vh;
+  width: 100%;
+  position: relative;
+}
+
+.modalContentGridforLessthen_5::-webkit-scrollbar {
+  display: none;
+}
+
+/* .modalContentGrid img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+} */
+
+.modalContentGrid::-webkit-scrollbar {
+  display: none;
+}
+
+.templateInModalGrid {
+  width: 32%;
+  height: 43%;
+  position: relative;
+  box-shadow: 1px 1px 10px var(--box-shadow-black);
+  border-radius: 0.8rem;
+}
+
+.templateImage {
+  transition: all 0.5s;
+  border-radius: 0.8rem;
+  width: 100%;
+  height: 100%;
+}
+
+.viewResumeBox {
+  height: 50vh;
+  width: 55%;
+  position: relative;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  overflow: hidden;
+  transition: all 0.3s;
+  background-color: var(--background-rgba-black);
+  box-shadow: 1px 1px 20px var(--box-shadow-black);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dashed var(--light-gray-color);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.viewResumeBox:hover {
+  transform: scale(1);
+  background-color: var(--background-rgba-black);
+}
+
+.viewResumeBox:hover .DefaultText {
+  transform: scale(1.1);
+  opacity: 1;
+  color: var(--white-color);
+}
+
+.viewResumeBox:hover .CVTemplateImage img {
+  opacity: 0.1;
+}
+
+.CVTemplateImage {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  border: none;
+}
+
+.DefaultText {
+  font-size: 23px;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.hoverText {
+  font-size: 23px;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  z-index: 1;
+  color: var(--white-color);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.viewResumeBox:hover .hoverText {
+  opacity: 0.9;
+  transform: scale(1.01);
+  color: var(--white-color);
+}
+
+.templateRow {
+  display: block;
+}
+
+@media (min-width: 767px) {
+  .templateRow {
+    display: none;
+  }
+}
+
+.rightSide {
+  flex: 0 0 40%;
+  height: 100vh;
+  width: 40%;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.resumePreview {
+  height: 80%;
+}
+
+.resumeshow {
+  height: 100%;
+  overflow: scroll;
+  width: 100%;
+}
+
+.resumeshow::-webkit-scrollbar {
+  display: none;
+}
+
+.smallhidebutton {
+  display: none;
+}
+
+.toppreviewbutton {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* default template    */
+
+/* card */
+
+@media (max-width: 870px) {
+  .leftSide {
+    flex: 0 0 95%;
+    margin: 2rem 0rem 1rem 0rem;
+    width: 50%;
+  }
+
+  .viewResumeBox {
+    width: 100%;
+  }
+
+  .rightSide {
+    flex: 0 0 95%;
+  }
+
+  .resumeshow {
+    width: 100%;
+  }
+
+  .resumePreview {
+    display: none;
+  }
+
+  /* 
+  .cvmanager_wrapper {
+    margin: 8rem 0rem 2rem 0rem;
+  } */
+
+  .cvmanager_wrapper {
+    position: relative;
+    top: 50px;
+    width: 100%;
+  }
+
+  .modalContentGridforLessthen_5 {
+    max-width: 100%;
+    gap: 5px;
+    flex-wrap: nowrap;
+    height: 30vh;
+    padding: 10px 2px;
+  }
+  .templateInModalGrid {
+    flex: 0 0 auto;
+    width: 45%;
+    height: 100%;
+    position: relative;
+    box-shadow: 1px 1px 10px var(--box-shadow-black);
+    border-radius: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .smallhidebutton {
+    display: flex;
+  }
+
+  .largehidebutton {
+    display: none;
+  }
+
+  .toppreviewbutton {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    flex-direction: column;
+  }
+}

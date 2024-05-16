@@ -1,0 +1,88 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.blue_icon {
+  color: var(--primary-color);
+  background: var(--light-shade-blue);
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.red_icon {
+  color: var(--crimson);
+  background: var(--light-shade-red);
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.yellow_icon {
+  color: var(--goldenroad);
+  background: var(--pumkin);
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.green_icon {
+  color: var(--green);
+  background: var(--light-green-color);
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.right {
+  text-align: right;
+}
+
+.ui_blue {
+  color: var(--primary-color);
+}
+
+.ui_red {
+  color: var(--crimson);
+}
+
+.ui_yellow {
+  color: var(--goldenroad);
+}
+
+.ui_green {
+  color: var(--green);
+}
+
+@media screen and (max-width: 960px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+}

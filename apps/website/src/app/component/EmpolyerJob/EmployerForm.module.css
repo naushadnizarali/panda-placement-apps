@@ -1,0 +1,72 @@
+.Questions {
+  background-color: var(--light-shade-grayish-blue);
+  color: var(--primary-color);
+  margin: 0.7rem 0.7rem 0rem 0rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  width: 100%;
+}
+.QuesBoxIcon {
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.5s;
+  border-radius: 50%;
+  margin: 5px;
+}
+.QuesBoxIcon1 {
+  font-size: 35px;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.5s;
+  /* border-radius: 50%; */
+  margin: 2px;
+}
+.QuesBoxIcon1:hover {
+  background-color: var(--white-color);
+  opacity: 0.2;
+  color: var(--black);
+}
+.QuesBoxIcon:hover {
+  background-color: var(--white-color);
+  opacity: 0.2;
+  color: var(--black);
+}
+
+.prescreenQuestion {
+  margin-top: 2rem;
+}
+.prescreenQuestion h2 {
+  color: var(--black);
+  text-align: center;
+  font-weight: bold;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+.simpleFlex {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid black; */
+  /* flex-wrap: wrap; */
+  /* width: 100%; */
+  flex-direction: row;
+}
+.inputLabels {
+  font-size: 14px;
+  color: var(--shade-of-gray);
+}
+.text {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 767px) {
+}

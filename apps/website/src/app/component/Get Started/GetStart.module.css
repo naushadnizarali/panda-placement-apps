@@ -1,0 +1,52 @@
+.mainBox {
+  width: 75%;
+  margin: 3rem auto;
+}
+.row {
+  display: block;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5%;
+  justify-content: space-between;
+  text-align: center;
+  padding: 40px 10px 5px 10px;
+}
+
+.count-box {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 35px;
+  line-height: 1em;
+  color: var(--dark-shade-gray);
+  font-weight: 500;
+}
+
+.counter-title {
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--dimgray);
+  font-weight: 400;
+  width: 100%;
+  display: block;
+}
+.getstartedImg {
+  height: 60vh;
+  text-align: center;
+  height: 60vh;
+  border-radius: 20px;
+}
+.ListItem {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+@media (max-width: 850px) {
+  .getstartedImg {
+    height: 35vh;
+    border-radius: 15px;
+  }
+  .mainBox {
+    width: 98%;
+  }
+}

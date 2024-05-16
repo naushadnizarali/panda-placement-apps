@@ -1,0 +1,25 @@
+.contentWrapper {
+  margin-right: 1.5rem;
+  background-color: white;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 15px;
+}
+.filterwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+.tableWrapper {
+  height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .filterwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,31 @@
+/* ProfileCompletionCircle.css */
+
+.profile-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--light-steel-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide overflow to make the border visible */
+}
+
+.percentage {
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+  z-index: 1;
+  position: absolute;
+}
+
+.progress-bar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  clip: rect(0, 50px, 100px, 0);
+  background-color: var(--bright-blue);
+  transform-origin: center;
+  transform: rotate(calc((100 - var(--completion)) * 1deg));
+}

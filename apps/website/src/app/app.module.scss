@@ -1,1 +1,133 @@
 /* Your styles goes here. */
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Helvetica-light';
+  src: url('assets/fonts/helvetica-light-587ebe5a59211.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url('assets/fonts/Helvetica-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica-Oblique';
+  src: url('assets/fonts/Helvetica-Oblique.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica-BoldOblique';
+  src: url('assets/fonts/Helvetica-BoldOblique.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica-compressed';
+  src: url('assets/fonts/helvetica-compressed-5871d14b6903a.otf')
+    format('opentype');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('assets/fonts/Helvetica.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica-rounded-bold';
+  src: url('assets/fonts/helvetica-rounded-bold-5871d05ead8de.otf')
+    format('opentype');
+}
+
+@font-face {
+  font-family: 'Creattion';
+  src: url('assets/fonts/Creattion Demo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GreatVibes-Regular';
+  src: url('assets/fonts/GreatVibes-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Helvetica', 'Poppins', sans-serif !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  /* --primary-color: #1976d2; */
+  /* --primary-btn-color-hover: #1354af; */
+  /* --primary-color: #9804c5; */
+  --primary-color: #265c7e;
+  --primary-btn-color-hover: #256288;
+  --secondary-color: #6c757d;
+  --secondary-gray-color: #7e8388;
+  --white-color: #fff;
+  --dark-green-color: #032d23;
+  --light-grayish-blue-color: #d5dae2;
+  --light-shade-grayish-blue: #f5f7fc;
+  --shade--blue-gray: hsl(233, 13%, 49%);
+  --shade-of-blue: #4f81a2;
+  --light-gray-color: #ccc;
+  --shade-of-gray: #7b7b7b;
+  --dimgray: #696969;
+  --lightblue: lightblue;
+  --lightgray: #e1e1e197;
+  --gray: gray;
+  --dark-gray: #333;
+  --black: #000;
+  --dark-shade-gray: #303133;
+  --alice-blue: #f0f5f7;
+  --light-steel-blue: #eef3ff;
+  --crimson: #d93025;
+  --coral-red: #fa5252;
+  --Pale-Pink: #fae0df;
+  --pale-blue: #e2eaf8;
+  --charcoal: #495057;
+  --skyblue: #80bdff;
+  --whitesmoke: whitesmoke;
+  --goldenroad: #f9ab00;
+  --olive: #aaa713;
+  --wheat-color: #fef2d9;
+  --green: #4caf50;
+  --red-color: #f44336;
+  --shade-of-aqua: #97dacb;
+  --see-green: #4eb49c;
+  --midnight-blue: #1b2032;
+  --dark-shade-black: #1a2027;
+  --deep-sky-blue: #3e98c7;
+  --bright-blue: #03a9f4;
+  --navbar: #e9f0fa;
+  --inputs-border-color: #dddddd;
+
+  color: rgba(38, 92, 126, 0.5);
+}
+
+:root {
+  --background-rgba-black: rgba(0, 0, 0, 0.8);
+  --transparent-light-blue-gray: hsla(240, 8%, 85%, 0.582);
+  --transparent-shade-of-gray: rgba(186, 186, 186, 0.2);
+  --transparent-shade-of-blue: rgba(0, 123, 255, 0.25);
+  --light-gray: rgba(222, 222, 222, 0.6);
+  --light-shade-red: rgba(217, 48, 37, 0.15);
+  --light-shade-blue-gray: rgba(64, 79, 104, 0.05);
+  --light-shade-blue: rgba(25, 103, 210, 0.07);
+  --pumkin: rgba(249, 171, 0, 0.1);
+  --light-green-color: rgba(52, 168, 83, 0.1);
+  --light-shade-orange: rgba(249, 171, 0, 0.1);
+  --dark-shade-grayss: rgb(90, 90, 90);
+}
+
+:root {
+  --box-shadow-black: rgba(0, 0, 0, 0.3);
+  --box-shadow-blacks: rgba(0, 0, 0, 0.9);
+  --box-shadows-black: rgba(0, 0, 0, 0.5);
+  --box-shadows-gray: rgba(172, 168, 168, 0.43);
+  --box-shadow-blue-gray: rgba(14, 29, 53, 0.2);
+  --box-shadow-dark-gray: rgb(95, 95, 95);
+}

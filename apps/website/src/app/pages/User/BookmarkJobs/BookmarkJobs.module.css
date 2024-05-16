@@ -1,0 +1,45 @@
+.backgroundImage {
+  background-image: url('../../../assets/v915-wit-011-l.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  text-align: center;
+}
+.pageHeading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--shade-of-blue);
+}
+.appliedCount {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--shade-of-gray);
+}
+.cards {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  background-color: var(--light-shade-blue-gray);
+}
+@media (max-width: 767px) {
+  .pageHeading {
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+  .appliedCount {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  .cards {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .backgroundImage {
+    height: 30vh;
+    width: 100%;
+  }
+}

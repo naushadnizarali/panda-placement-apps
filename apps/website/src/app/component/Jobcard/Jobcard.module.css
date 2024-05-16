@@ -1,0 +1,227 @@
+.popular-job-category {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 1.3rem;
+  border: 0.1px solid rgba(64, 79, 104, 0.1);
+  border-radius: 10px;
+  transition: background-color 0.2s, color 0.2s;
+  width: 40%;
+  margin: 1rem;
+  /* box-shadow: 4px 7px 8px var(--box-shadows-black); */
+  background-color: var(--white-color);
+}
+.bookmark {
+  cursor: pointer;
+}
+
+.bookmarked {
+  color: var(
+    --coral-red
+  ); /* Change this to the desired color for bookmarked items */
+}
+
+.popular-job-category-oneCard {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 1.3rem;
+  /* border: 0.1px solid rgba(64, 79, 104, 0.1); */
+  border: 0.1px solid rgba(64, 79, 104, 0.1);
+  border-radius: 10px;
+  transition: background-color 0.2s, color 0.2s;
+  /* width: 100%; */
+  margin: 1rem;
+  box-shadow: 4px 7px 8px var(--box-shadows-black);
+  background-color: var(--white-color);
+}
+
+.popular-job-categoryOnIsFilter {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 1.5rem 0rem 1rem 2rem;
+  border: 0.1px solid rgba(64, 79, 104, 0.1);
+  border-radius: 10px;
+  /* box-shadow: 15px 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1); */
+  /* box-shadow: 4px 7px 8px var(--box-shadows-black);  */
+  transition: background-color 0.2s, color 0.2s;
+  width: 100%;
+  margin: 0.6rem 0rem;
+  background-color: var(--white-color);
+}
+.popular-job-categoryOnIsFilter:hover,
+.popular-job-category-oneCard:hover,
+.popular-job-category:hover {
+  box-shadow: 15px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.warapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.applynow {
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.category-info {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.title h2 {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.title h2:hover {
+  color: var(--primary-color);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.opening {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.icon {
+  font-size: 35px;
+  color: var(--primary-color);
+  transition: color 0.2s;
+}
+
+.popular-job-category:hover .icon {
+  color: var(--whitesmoke);
+}
+
+.icon-bg {
+  margin-right: 1rem;
+  transition: all 0.5s ease-in;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-bg div {
+  border: 2px solid var(--primary-color);
+}
+/* .popular-job-category:hover .icon-bg {
+  color: var(--white-color);
+} */
+
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.heading h2 {
+  font-size: 30px;
+}
+
+.heading p {
+  font-size: 15px;
+  color: var(--gray);
+}
+
+.oneiconandname {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.oneiconandname p {
+  margin-left: 0.4rem;
+  margin-bottom: 0;
+  color: var(--gray);
+}
+
+.oneiconandname1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.oneiconandname1 p {
+  margin-left: 0.4rem;
+  margin-bottom: 0;
+  color: var(--gray);
+}
+
+.oneiconandnamewrapper {
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* YourStyles.module.css */
+.info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-right: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item p {
+  margin-bottom: 0rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  font-size: 12px;
+}
+
+.text {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.bookmark {
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .warapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .popular-job-category {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+@media (maxwidth: 600px) {
+  .icon-bg {
+    display: none;
+  }
+}

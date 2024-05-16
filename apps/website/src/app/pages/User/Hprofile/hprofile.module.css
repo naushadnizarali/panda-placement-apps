@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+.page_heading {
+  display: flex;
+  align-items: center;
+}
+
+.profile_maindiv::-webkit-scrollbar {
+  display: none;
+}
+
+.profile_maindiv {
+  position: relative;
+  top: 60px;
+  margin-bottom: 60px;
+  padding: 50px 0px;
+  background-color: var(--light-shade-blue-gray);
+  letter-spacing: 1.2px;
+  transition: all 1s;
+  /* background-color: rgb(238, 243, 255); */
+}
+.profile_Box {
+  width: 75%;
+  margin: 0 auto;
+}
+.page_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ImageUploader {
+  display: flex;
+  align-items: center;
+}
+.Removeimagebtn {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 1px 2px;
+  margin: 3px 0px;
+  color: var(--primary-color);
+  font-size: 12px;
+}
+/* .ImageUploader:hover .Removeimagebtn{
+  display: block;
+}   */
+
+.previewbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.arrow_heading {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 936px) {
+  .profile_maindiv {
+    padding: 40px 15px;
+  }
+}
+
+/* */
+.myProfile_box {
+  background-color: var(--white-color);
+  margin: 25px 0px 17px 0px;
+  padding: 30px;
+  border-radius: 15px;
+  /* box-shadow: 0.5px 0.5px 5px rgba(64, 79, 104, 0.2), -0.5px -0.5px 5px rgba(64, 79, 104, 0.2); */
+  box-shadow: 0px 1px 10px var(--light-shade-blue-gray);
+}
+
+.boxHeadign {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress_bar {
+  width: 60px;
+  position: fixed;
+  right: 5%;
+}
+
+.profile_maindiv input {
+  background-color: var(--alice-blue);
+  letter-spacing: 1.5px;
+  /* height: 3.5rem !important; */
+  /* padding: 16.5px 14px !important; */
+}
+
+/* .MuiInputBase-input{
+  height: 3.5rem !important;
+  padding: 16.5px 14px !important; 
+} */
+
+.profile_maindiv textarea {
+  background-color: var(--alice-blue);
+}
+
+.save_btn {
+  font-size: 17px;
+  padding: 8px 23px;
+  margin: 20px 1px;
+
+  font-weight: 500;
+  background: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+}
+
+.save_btn:hover .transition {
+  width: 13em;
+  height: 13em;
+}
+
+.save_btn:active {
+  transform: scale(0.97);
+}
+
+/*  */
+
+.addEducation {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.addEducation a {
+  text-decoration: none;
+  font-size: 11px;
+  color: var(--crimson) !important;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.custom-button {
+  background-color: var(--Pale-Pink);
+}
+
+.qualifi_inputs #description::-webkit-scrollbar {
+  display: none;
+}
+
+.skillinputfield {
+  background-color: var(--alice-blue);
+  border-radius: 10px;
+}
+
+.MuiChip_root {
+  background-color: transparent !important;
+  padding: 15px 0px !important;
+  margin-bottom: 15px !important;
+  font-size: 18px !important;
+  letter-spacing: 1px;
+}
+
+.MuiFormControl_root {
+  width: 100% !important;
+  box-shadow: none;
+}
+
+.cardText {
+  font-size: 14.5px;
+}
+
+.chipwrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.clearSkil {
+  padding-left: 7px;
+  color: var(--white-color);
+  cursor: pointer;
+  border-radius: 30px;
+}
+.selectstyles {
+  border: none;
+}
+.chip {
+  display: flex;
+  background-color: var(--crimson);
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 30px;
+  margin: 0.25rem;
+  font-size: small;
+  width: fit-content;
+}
+
+@media (max-width: 767px) {
+  .progress_bar {
+    width: 60px;
+    position: relative;
+    right: 0;
+  }
+
+  .profile_maindiv input {
+    padding: 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .profile_maindiv textarea {
+    font-size: 14px;
+  }
+
+  .profile_maindiv {
+    padding: 20px 15px;
+  }
+
+  .boxHeadign {
+    margin-bottom: 15px;
+  }
+
+  .myProfile_box {
+    padding: 13px;
+  }
+  .profile_Box {
+    width: 100%;
+  }
+  .page_heading h2 {
+    font-size: 21px;
+    margin-bottom: 2px;
+  }
+
+  .descrip {
+    font-size: 12px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+}

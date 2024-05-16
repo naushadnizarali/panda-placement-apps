@@ -1,0 +1,46 @@
+.mainModal .modal-dialog {
+  background-color: red;
+  margin: 0px !important;
+}
+
+.ModalUl {
+  height: 20vh;
+  overflow: scroll;
+  padding-top: 10px;
+  padding-left: 4px;
+}
+
+.ModalUl::-webkit-scrollbar {
+  display: none;
+}
+.ModalUl li {
+  padding: 5px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ModalUl li:hover {
+  background-color: var(--light-steel-blue);
+}
+.modalButtons {
+  background-color: #4eb7ba;
+  border: 1px solid #4eb7ba;
+  padding: 5px 8px;
+  font-size: 15px;
+}
+.modalButtons:hover {
+  border: 1px solid #4eb7ba;
+  background-color: var(--light-steel-blue);
+  color: black;
+}
+.modalButtonsOulined {
+  background-color: var(--light-steel-blue);
+  border: 1px solid #4eb7ba;
+  color: black;
+  padding: 5px 8px;
+  font-size: 15px;
+}
+.modalButtonsOulined:hover {
+  background-color: #4eb7ba !important;
+  color: white;
+  border: 1px solid transparent;
+}

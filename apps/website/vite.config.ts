@@ -19,6 +19,15 @@ export default defineConfig({
 
   plugins: [react(), nxViteTsPaths()],
 
+  optimizeDeps: {
+    force: true,
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+      },
+    },
+  },
+
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],

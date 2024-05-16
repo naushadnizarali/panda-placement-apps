@@ -1,0 +1,41 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  align-items: start;
+}
+.fieldsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inputField {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.errorMessage {
+  color: var(--red-color);
+  font-size: 12px;
+  padding-left: 1rem;
+  line-height: 0%;
+  margin-top: 0.5rem;
+}
+.employment_data {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+  .Feilds {
+    display: flex;
+    flex-direction: column;
+  }
+}

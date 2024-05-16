@@ -1,0 +1,41 @@
+[
+  {
+    "countryid": 1,
+    "countryname": "Afghanistan",
+    "cities": [
+      "‘Alāqahdārī Dīshū",
+      "Shahrak",
+      "Shibirghān",
+      "Shīnḏanḏ",
+      "Sidqābād",
+      "Tagāw-Bāy",
+      "Taloqan",
+      "Tarinkot",
+      "Tīr Pul",
+      "Tukzār",
+      "Uruzgān",
+      "Wākhān",
+      "Zaṟah Sharan",
+      "Zaranj",
+      "Zarghūn Shahr",
+      "Zindah Jān"
+    ]
+  },
+  {
+    "countryid": 3,
+    "countryname": "Albania",
+    "cities": [
+      "Sukth",
+      "Tepelenë",
+      "Tirana",
+      "Ulëz",
+      "Ura Vajgurore",
+      "Vau i Dejës",
+      "Velçan",
+      "Vlorë",
+      "Vorë",
+      "Voskopojë",
+      "Vukatanë"
+    ]
+  }
+]

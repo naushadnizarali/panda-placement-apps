@@ -1,0 +1,7 @@
+.offcanvas {
+  bottom: 10px;
+  top: 80px !important;
+  right: 15px !important;
+  border: 1px solid var(--light-gray-color);
+  border-radius: 10px;
+}

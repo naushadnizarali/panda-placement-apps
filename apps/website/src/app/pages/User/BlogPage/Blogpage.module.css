@@ -1,0 +1,32 @@
+.posts {
+  display: flex;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  font-weight: 550;
+  margin-top: 3rem;
+}
+
+.BlogPageBody {
+  width: 75%;
+  height: auto;
+  margin: 5rem auto;
+}
+
+.heading {
+  /* font-size: 1.8rem; */
+  color: var(--dark-gray);
+  margin-bottom: 0rem;
+  text-align: left;
+}
+
+.para {
+  margin-bottom: 10px;
+}
+@media (max-width: 766px) {
+  .BlogPageBody {
+    width: 97%;
+    height: auto;
+    margin: 5rem auto;
+  }
+}

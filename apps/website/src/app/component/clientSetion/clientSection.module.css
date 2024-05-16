@@ -1,0 +1,12 @@
+.slider_images {
+  /* margin: 90px 0px 90px 160px; */
+  margin: 50px 30px;
+  text-align: center;
+  overflow: hidden;
+}
+@media (max-width: 850px) {
+  .slider_images {
+    margin: 90px 0px 90px 50px;
+    text-align: center;
+  }
+}

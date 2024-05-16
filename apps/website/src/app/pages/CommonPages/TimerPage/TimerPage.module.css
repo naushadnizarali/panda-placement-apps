@@ -1,0 +1,41 @@
+.TimerPage_main {
+  background-image: url(../../../assets/BackgroundImage.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-top: 5rem;
+  text-align: center;
+  height: 100vh;
+  padding-left: 2rem;
+}
+
+.TimerPage {
+  background-color: var(--white-color);
+  backdrop-filter: blur(10px);
+  width: 35%;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.gotohome {
+  background-color: #002745;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+@media (max-width: 767px) {
+  .TimerPage {
+    background-color: var(--white-color);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+  }
+}

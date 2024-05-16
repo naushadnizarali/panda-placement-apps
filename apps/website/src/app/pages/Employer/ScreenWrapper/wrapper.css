@@ -1,0 +1,27 @@
+/* For small screens with the sidebar open */
+.content-small-sidebar-open {
+  margin-left: 40px;
+  margin-right: 0;
+  padding-top: 90px;
+  z-index: 0;
+  transition: margin 0.3s ease;
+  /* height: 100vh; */
+}
+
+.content-wide-sidebar-closed {
+  margin-left: 310px;
+  margin-right: 0;
+  padding-top: 100px;
+  z-index: 9999;
+  transition: margin 0.3s ease;
+  padding-bottom: 10px;
+  /* height: 100vh; */
+}
+
+@media screen and (max-width: 850px) {
+  .content-small-sidebar-open {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 80px;
+  }
+}
