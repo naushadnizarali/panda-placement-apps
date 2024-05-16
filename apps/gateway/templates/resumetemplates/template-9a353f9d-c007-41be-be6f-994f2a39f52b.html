@@ -1,0 +1,264 @@
+<!-- 
+9a353f9d-c007-41be-be6f-994f2a39f52b
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PandaPlacement-Resume</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .primary_text_color {
+        color: #1354af;
+      }
+
+      .body {
+        padding: 20px 14px;
+      }
+
+      #left {
+        width: 30%;
+        margin-right: 1%;
+      }
+
+      #right {
+        width: 69%;
+      }
+
+      .chipwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+      }
+
+      .chip {
+        overflow-x: hidden;
+        padding: 5px 10px 5px 10px;
+        text-overflow: ellipsis !important;
+        text-align: center;
+        border-radius: 4px;
+        color: #fff;
+        line-height: 2.5;
+        display: inline;
+        background-color: #1354af;
+      }
+
+      .content_break {
+        page-break-inside: avoid;
+      }
+
+      .Logo {
+        text-align: right;
+        padding-right: 40px;
+      }
+      .Logo img {
+        width: 30%;
+      }
+    </style>
+
+  </head>
+  <body class="w3-light-grey primary_text_color">
+    <div class="">
+      <div class="body">
+        <div class="w3-third" id="left">
+          <div class="w3-white w3-text-grey w3-card-4 left-inner">
+            <div class="w3-display-container">
+              {% if user.image %}
+              <img
+                src="{{base_dir}}{{user.image}}"
+                style="width: 100%"
+                alt="{{user.first_name}}-{{user.last_name}}-profile"
+              />
+              {% else %}
+              <img
+                src="{{base_dir}}/media/profile_images/default.jpg"
+                style="width: 100%"
+                alt="profile image"
+              />
+              {% endif %}
+              <div class="w3-display-bottomleft w3-container w3-text-black">
+                <h2>{{user.first_name }} {{user.last_name}}</h2>
+              </div>
+            </div>
+            <div class="w3-container">
+              <p>
+                <i
+                  class="fa fa-briefcase fa-fw w3-margin-right w3-large primary_text_color"
+                ></i>
+                {% if seeker_info %} {{seeker_info.headline}} {% endif %}
+              </p>
+              <p>
+                <i
+                  class="fa fa-home fa-fw w3-margin-right w3-large primary_text_color"
+                ></i
+                >{% if seeker_info %} {{ seeker_info.city }}, {{seeker_info.country}} {% endif %}
+              </p>
+              <p>
+                <i
+                  class="fa fa-envelope fa-fw w3-margin-right w3-large primary_text_color"
+                ></i
+                >{{ user.email }}
+              </p>
+              <p>
+                <i
+                  class="fa fa-phone fa-fw w3-margin-right w3-large primary_text_color"
+                ></i
+                >{{ user.phone }}
+              </p>
+              <hr />
+
+              {% if ssl.summary %}
+              <div class="">
+                <p class="w3-large">
+                  <b
+                    ><i
+                      class="fa fa-asterisk fa-fw w3-margin-right primary_text_color"
+                    ></i
+                    >Subject</b
+                  >
+                </p>
+                <p>{{ssl.summary|safe}}</p>
+              </div>
+              {% endif %} {% if ssl.skill %}
+              <div class="content_break">
+                <p class="w3-large">
+                  <b
+                    ><i
+                      class="fa fa-cogs fa-fw w3-margin-right primary_text_color"
+                    ></i
+                    >Skills</b
+                  >
+                </p>
+                <div class="chipwrapper">
+                  {% for skill in ssl.skill %}
+                  <p class="chip">{{ skill.skill }} - {{ skill.level }}</p>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endif %}
+
+              <br />
+
+              {% if ssl.language %}
+              <div class="content_break">
+                <p class="w3-large w3-text-theme">
+                  <b
+                    ><i
+                      class="fa fa-language fa-fw w3-margin-right primary_text_color"
+                    ></i
+                    >Languages</b
+                  >
+                </p>
+                <div class="chipwrapper">
+                  {% for lang in ssl.language %}
+                  <p class="chip">{{ lang.skill }} - {{ lang.level }}</p>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endif %}
+
+              <br />
+            </div>
+          </div>
+          <br />
+        </div>
+        <!-- End Left Column -->
+
+        <!-- Right Column -->
+        <div class="w3-twothird" id="right">
+          {% if experience %}
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i
+                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge primary_text_color"
+              ></i
+              >Work Experience
+            </h2>
+            {% for job in experience%}
+            <div class="w3-container content_break">
+              <h5 class="">{{job.position}} / {{job.company}}</h5>
+              <h6 class="primary_text_color">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i
+                >{{job.period_from}} - {% if job.period_to %}{{job.period_to }}
+                {% else %}
+                <span class="chip">Present</span>
+                {% endif %}
+              </h6>
+              <p>{{job.description|safe}}</p>
+              <hr />
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %} {% if qualification_data %}
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i
+                class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge primary_text_color"
+              ></i
+              >Education
+            </h2>
+
+            {% for quali in qualification_data %}
+            <div class="w3-container content_break">
+              <h5 class="">{{quali.institute}}</h5>
+              <h6 class="primary_text_color">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i
+                >{{quali.start_period}} - {% if quali.complete_period%}
+                {{quali.complete_period}} {% else %}<span class="chip"
+                  >Present</span
+                >{% endif %}
+              </h6>
+              <p>{{quali.education_level}} / {{quali.degree}}</p>
+              <hr />
+            </div>
+            {% endfor %}
+            
+          </div>
+          {% endif %} {% if projects %}
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i
+                class="fa fa-cubes fa-fw w3-margin-right w3-xxlarge primary_text_color"
+              ></i
+              >Project
+            </h2>
+            {% for proja in projects%}
+            <div class="w3-container content_break">
+              <h5 class="">{{proja.title}}</h5>
+              <h6 class="primary_text_color">
+                <i class="fa fa-external-link fa-fw w3-margin-right"></i
+                >{{proja.url}}
+              </h6>
+              <h5>{{proja.role}}</h5>
+              <p>{{proja.description|safe}}</p>
+              <hr />
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <div class="Logo">
+            <img src="{{base_dir}}/media/images/logo-tranparent.png" alt="" />
+          </div>
+        </div>
+        <!-- End Right Column -->
+      </div>
+      <!-- End Grid -->
+    </div>
+  </body>
+</html>

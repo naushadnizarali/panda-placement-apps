@@ -1,0 +1,223 @@
+<!-- 
+b8a310bc-6adf-4e91-b49f-06272dfaef9f
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=60, initial-scale=1.0" />
+    <title>PandaPlacement-Resume</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 3.0rem  2.2rem;
+      }
+
+      div#resume {
+        min-width: 310px;
+        font: 16px Helvetica, sans-serif;
+        line-height: 24px;
+        color: #000;
+      }
+
+      div#resume h1 {
+        margin: 0 0 16px 0;
+        padding: 0 0 16px 0;
+        font-size: 42px;
+        font-weight: bold;
+        letter-spacing: -2px;
+        border-bottom: 1px solid #999;
+        line-height: 50px;
+      }
+
+      div#resume h2 {
+        font-size: 20px;
+        margin: 0 0 6px 0;
+        position: relative;
+      }
+
+      div#resume h2 span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-style: italic;
+        font-family: Georgia, serif;
+        font-size: 16px;
+        color: #999;
+        font-weight: normal;
+      }
+
+      div#resume p {
+        margin: 0 0 16px 0;
+      }
+
+      div#resume a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px dotted #999;
+      }
+
+      div#resume a:hover {
+        border-bottom-style: solid;
+        color: #000;
+      }
+
+      div#resume p.objective {
+        font-family: Georgia, serif;
+        font-style: italic;
+        color: #666;
+      }
+
+      div#resume dt {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: right;
+        padding: 0 26px 0 0;
+        width: 150px;
+        border-right: 1px solid #999;
+      }
+
+      div#resume dl {
+        display: table-row;
+      }
+
+      div#resume dl dt,
+      div#resume dl dd {
+        display: table-cell;
+        padding-bottom: 20px;
+      }
+
+      div#resume dl dd {
+        width: 85%;
+        padding-left: 26px;
+        text-wrap: wrap;
+      }
+
+      div#resume .resumeimage {
+        float: right;
+        padding: 10px;
+        background: #fff;
+        margin: 0 30px;
+        transform: rotate(-4deg);
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+        width: 30%;
+        max-width: 220px;
+      }
+      
+    .Logo {
+        text-align: right;
+        padding-right: 40px;
+      }
+      .Logo img {
+        width: 30%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="resume">
+      {% if user.image %}
+      <img
+        class="resumeimage"
+        src="{{base_dir}}{{user.image}}"
+        alt="{{user.first_name}}-{{user.last_name}}-profile"
+        />
+        {% else %}
+        <img
+        class="resumeimage"
+        src="{{base_dir}}/media/profile_images/default.png.jpg"
+        alt="profile image"
+      />
+
+      {% endif %}
+      <h1>{{user.first_name }} {{user.last_name}}</h1>
+      {% if user.phone %}
+      <p>Cell: <a href="#">{{ user.phone }}</a></p>
+      {% endif %}
+      {% if user.email %}
+      <p>
+        Email: <a href="mailto:{{user.email}}">{{ user.email }}</a>
+      </p>
+      {% endif %}
+      {% if ssl.summary %}
+
+      <p id="objective">{{ssl.summary|safe}}</p>
+      {% endif %} <br><br>
+      
+      <!-- Education -->
+      {% if qualification_data %}
+      <dl>
+        <dt>Education</dt>
+        <dd>
+          {% for quali in qualification_data %}
+          <h2>{{quali.institute}} - {{quali.location}} <span>{{quali.start_period}} - {{quali.complete_period}}</span></h2>
+          <h4>{{quali.education_level}} / {{quali.degree}}</h4>
+          {% endfor %}
+        </dd>
+      </dl>
+      {% endif %}
+      
+      <!-- Experience -->
+      {% if experience %}
+      <dl>
+        <dt>Experience</dt>
+        <dd>
+          {% for job in experience%}
+          
+          <h2>{{job.position}}<span>{{job.period_from}} - {{job.period_to}}</span></h2>
+          <h3>{{job.company}}</h3>
+          <p>{{job.description|safe}}</p>
+          {% endfor %}
+        </dd>
+      </dl>
+      {% endif %} 
+
+      <!-- Projects -->
+      {% if projects %}
+      <dl>
+        <dt>Project</dt>
+        <dd>
+          {% for proja in projects%}
+          
+          <h2>{{proja.title}}<span>{{proja.role}}</span></h2>
+          <h4>{{proja.url}}</h4>
+          <p>{{proja.description|safe}}</p>
+          {% endfor %}
+        </dd>
+      </dl>
+      {% endif %} 
+
+      {% if ssl.skill %}
+      <dl>
+        <dt>Skills</dt>
+        <dd>
+          {% for skill in ssl.skill %}
+          <span>{{ skill.skill }} - {{ skill.level }}</span>
+          {% endfor %}
+        </dd>
+      </dl>
+      {% endif %} 
+
+      {% if ssl.language %}
+      <dl>
+        <dt>Languages</dt>
+        <dd>
+          {% for lang in ssl.language %}
+          <span>{{ lang.skill }} - {{ lang.level }}</span>
+          {% endfor %}
+        </dd>
+      </dl>
+      {% endif %} 
+
+      <div class="Logo">
+        <img src="{{base_dir}}/media/images/logo-tranparent.png" alt="">
+      </div>
+
+      
+    </div>
+  </body>
+</html>

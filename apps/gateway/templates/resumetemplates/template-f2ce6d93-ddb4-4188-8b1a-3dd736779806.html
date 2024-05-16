@@ -1,0 +1,416 @@
+<!-- 
+f2ce6d93-ddb4-4188-8b1a-3dd736779806
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PandaPlacement-Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      body {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .bold {
+        font-weight: 700;
+        max-width: 980px;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+
+      .semi-bold {
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      .resume {
+        width: 100%;
+        padding: 0;
+
+        height: 100%;
+        margin: 0;
+      }
+
+      .resume .resume_left {
+        width: 30%;
+        float: left;
+        padding: 8px 8px 0 8px;
+        background: #0bb5f4;
+      }
+
+      .resume .resume_left .resume_profile {
+        width: 100%;
+        /* height: 280px; */
+      }
+
+      .resume .resume_left .resume_profile img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .resume .resume_left .resume_content {
+        padding: 0 20px;
+      }
+
+      .resume .title {
+        margin-bottom: 20px;
+      }
+
+      .resume .resume_left .bold {
+        color: #fff;
+      }
+
+      .resume .resume_left .regular {
+        color: #b1eaff;
+      }
+
+      .resume .resume_item {
+        padding: 25px 0;
+        border-bottom: 2px solid #b1eaff;
+      }
+
+      .resume .resume_left .resume_item:last-child,
+      .resume .resume_right .resume_item:last-child {
+        border-bottom: 0px;
+      }
+
+      .resume .resume_left ul li {
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+      }
+
+      .resume .resume_left ul li:last-child {
+        margin-bottom: 0;
+      }
+
+      .resume .resume_left ul li .icon {
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        color: #0bb5f4;
+        border-radius: 50%;
+        margin-right: 15px;
+        font-size: 18px;
+        position: relative;
+      }
+
+      .resume .icon i,
+      .resume .resume_right .resume_hobby ul li i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .resume .resume_left ul li .data {
+        color: #b1eaff;
+      }
+
+      .resume .resume_left .resume_skills ul li {
+        display: flex;
+        margin-bottom: 10px;
+        color: #b1eaff;
+        flex-flow: wrap;
+        align-items: center;
+      }
+
+      .resume .resume_left .resume_skills ul li .skill_name {
+        margin: 0 3px;
+      }
+
+      .resume .resume_left .resume_skills ul li .skill_progress {
+        width: 60%;
+        margin: 0 5px;
+        height: 5px;
+        background: #009fd9;
+        position: relative;
+      }
+
+      .resume .resume_left .resume_skills ul li .skill_per {
+        width: 15%;
+      }
+
+      .resume .resume_left .resume_skills ul li .skill_progress span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #fff;
+      }
+
+      .resume .resume_left .resume_social .semi-bold {
+        color: #fff;
+        margin-bottom: 3px;
+      }
+
+      .resume .resume_right {
+        width: 70%;
+        float: right;
+        background: #fff;
+        padding: 25px;
+      }
+
+      .resume .resume_right .bold {
+        color: #0bb5f4;
+      }
+
+      .resume .resume_right .resume_work ul,
+      .resume .resume_right .resume_education ul {
+        padding-left: 40px;
+        overflow: hidden;
+      }
+
+      .resume .resume_right ul li {
+        position: relative;
+      }
+
+      .resume .resume_right ul li .date {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+
+      .resume .resume_right ul li .info {
+        margin-bottom: 20px;
+      }
+
+      .resume .resume_right ul li:last-child .info {
+        margin-bottom: 0;
+      }
+
+      .resume .resume_right .resume_work ul li:before,
+      .resume .resume_right .resume_education ul li:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -25px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        border: 2px solid #0bb5f4;
+      }
+
+      .resume .resume_right .resume_work ul li:after,
+      .resume .resume_right .resume_education ul li:after {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: -21px;
+        width: 2px;
+        height: 115px;
+        background: #0bb5f4;
+      }
+
+      .resume .resume_right .resume_hobby ul {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .resume .resume_right .resume_hobby ul li {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #0bb5f4;
+        border-radius: 50%;
+        position: relative;
+        color: #0bb5f4;
+      }
+
+      .resume .resume_right .resume_hobby ul li i {
+        font-size: 30px;
+      }
+
+      .resume .resume_right .resume_hobby ul li:before {
+        content: "";
+        position: absolute;
+        top: 40px;
+        right: -52px;
+        width: 50px;
+        height: 2px;
+        background: #0bb5f4;
+      }
+
+      .resume .resume_right .resume_hobby ul li:last-child:before {
+        display: none;
+      }
+
+      .Logo {
+        text-align: right;
+        padding-right: 40px;
+      }
+      .Logo img {
+        width: 30%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="resume">
+      <div class="resume_left">
+        <div class="resume_profile">
+          {% if user.image %}
+          <img src="{{base_dir}}{{user.image}}" alt="profile_pic" />
+          {% else %}
+          <img
+            src="{{base_dir}}/media/profile_images/default.jpg"
+            alt="profile_pic"
+          />
+          {% endif %}
+        </div>
+        <div class="resume_content">
+          <div class="resume_item resume_info">
+            <div class="title">
+              <p class="bold">{{user.first_name }} {{user.last_name}}</p>
+              <p class="regular">
+                {% if seeker_info %} {{seeker_info.headline}} {% endif %}
+              </p>
+            </div>
+            <ul>
+              <li>
+                <div class="icon">
+                  <i class="fa fa-address-book"></i>
+                </div>
+                <div class="data">
+                  {% if seeker_info %} {{ seeker_info.city }}, {{seeker_info.country }} {% endif %}
+                </div>
+              </li>
+              <li>
+                <div class="icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="data">{{ user.phone }}</div>
+              </li>
+              <li>
+                <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="data">{{ user.email }}</div>
+              </li>
+            </ul>
+          </div>
+          {% if ssl.skill %}
+          <div class="resume_item resume_skills">
+            <div class="title">
+              <p class="bold">skill's</p>
+            </div>
+            <ul>
+              <li>
+                {% for skill in ssl.skill %}
+                <div class="skill_name">{{ skill.skill }} - {{ skill.level }}</div>
+                {% endfor %}
+              </li>
+            </ul>
+          </div>
+          {% endif %} {% if ssl.language %}
+          <div class="resume_item resume_skills">
+            <div class="title">
+              <p class="bold">language's</p>
+            </div>
+            <ul>
+              <li>
+                {% for lang in ssl.language %}
+                <div class="skill_name">{{ lang.skill }} - {{ lang.level }}</div>
+                {% endfor %}
+              </li>
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <!-- End Left Column -->
+      <div class="resume_right">
+        {% if ssl.summary %}
+        <div class="resume_item resume_about">
+          <div class="title">
+            <p class="bold">Subject</p>
+          </div>
+          <p>{{ssl.summary|safe}}</p>
+        </div>
+        {% endif %} {% if experience %}
+        <div class="resume_item resume_work">
+          <div class="title">
+            <p class="bold">Work Experience</p>
+          </div>
+          <ul>
+            {% for job in experience%}
+            <li>
+              <div class="date">
+                {{job.period_from}} - {% if job.period_to %}{{job.period_to }}
+                {% else %}
+                <span class="">Present</span>
+                {% endif %}
+              </div>
+
+              <div class="info">
+                <p class="semi-bold">{{job.position}} / {{job.company}}.</p>
+                <p>{{job.description|safe}}</p>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %} {% if qualification_data %}
+        <div class="resume_item resume_education">
+          <div class="title">
+            <p class="bold">Education</p>
+          </div>
+          <ul>
+            {% for quali in qualification_data %}
+            <li>
+              <div class="date">
+                {{quali.start_period}} - {% if quali.complete_period%}
+                {{quali.complete_period}} {% else %}<span class="">Present</span
+                >{% endif %}
+              </div>
+              <div class="info">
+                <p class="semi-bold">
+                  {{quali.education_level}} / {{quali.degree}}
+                </p>
+                <p class="semi-bold">{{quali.institute}}</p>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %} {% if projects %}
+        <div class="resume_item resume_education">
+          <div class="title">
+            <p class="bold">Education</p>
+          </div>
+          <ul>
+            {% for proja in projects%}
+            <li>
+              <div class="semi-bold">{{proja.title}} / {{proja.role}}</div>
+              <div class="info">
+                <p class="semi-bold">{{proja.url}}</p>
+                <p class="semi-bold"></p>
+                <p class="semi-bold">{{proja.description|safe}}</p>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        <div class="Logo">
+          <img src="{{base_dir}}/media/images/logo-tranparent.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

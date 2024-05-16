@@ -1,0 +1,590 @@
+<!-- 
+8c06f675-1b65-467b-a96c-6b97b9aaae83
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PandaPlacement-Resume</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .MainWrapper {
+        width: 100%;
+        margin: auto;
+        overflow: hidden; /* Clear floats */
+      }
+      .HeaderName {
+        width: 50%;
+        height: 100%;
+        float: left;
+        padding-top: 70px;
+        padding-left: 40px;
+        font-size: 15px;
+        
+      }
+      .HeaderName .Name{
+        font-size: 50px;
+      }
+      .Profession {
+        padding: 0 0 0 0.5rem;
+      }
+      .ProfileImage {
+        width: 49%;
+        height: 100%;
+        float: right;
+        text-align: end;
+        padding-right: 90px;
+      }
+
+      .HeaderWrapper {
+        background-color: #0097e6;
+        color: white;
+        width: 100%;
+        height: 250px;
+      }
+
+      .ProfileImage img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: #fff;
+      }
+      .ContentWrapper {
+        /* border: 3px solid red; */
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .leftSide {
+        width: 30%;
+        height: 100%;
+        float: left;
+        background-color: #34495e;
+        color: white;
+        padding-top: 40px;
+        padding-left: 5px;
+      }
+
+      .contacts {
+        /* border: 1px solid red; */
+        padding-left: 30px;
+        line-height: 1;
+        margin-bottom: 3.5rem;
+        font-size: 15px;
+      }
+      .ContactDetails {
+        /* border: 1px solid; */
+        margin-top: 10px;
+        line-height: 1.6;
+      }
+      .Languages {
+        padding-left: 30px;
+        line-height: 1;
+        margin-bottom: 3.5rem;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+      .EduDegree {
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .contacts1 {
+        font-size: 23px;
+      }
+      .range-wrapper {
+        width: 30%;
+        /* margin: 0 0 0 30%; */
+        padding-top: 10px;
+      }
+      .range-wrapper1 {
+        width: 30%;
+        /* margin: 0 0 0 30%; */
+        /* padding-top: 10px; */
+        margin-bottom: 1rem;
+      }
+      .range-container {
+        width: 100%;
+        height: 3px;
+
+        overflow: hidden;
+        position: relative;
+        margin-top: 2px;
+      }
+      .range-white {
+        width: 90%;
+        height: 100%;
+        /* border: 3px solid; */
+        background-color: white;
+        position: absolute;
+        left: 0;
+      }
+      .range-color {
+        width: 20%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        left: 0;
+      }
+      */ .range-wrapper2 {
+        width: 100%;
+        /* margin: 0 0 0 30%; */
+        /* padding-top: 10px; */
+        margin-bottom: 1rem;
+      }
+      .range-container2 {
+        width: 70%;
+        height: 3px;
+
+        overflow: hidden;
+        position: relative;
+        margin-top: 2px;
+      }
+      .range-white2 {
+        width: 90%;
+        height: 100%;
+        /* border: 3px solid; */
+        background-color: white;
+        position: absolute;
+        left: 0;
+      }
+      .range-color2 {
+        width: 20%;
+        height: 100%;
+        background-color: #0097e6;
+        position: absolute;
+        left: 0;
+      }
+      */ .range-wrapper2 {
+        width: 100%;
+        /* margin: 0 0 0 30%; */
+        /* padding-top: 10px; */
+        margin-bottom: 1rem;
+      }
+      .range-container2 {
+        width: 70%;
+        height: 3px;
+
+        overflow: hidden;
+        position: relative;
+        margin-top: 2px;
+      }
+      .range-white2 {
+        width: 90%;
+        height: 100%;
+        /* border: 3px solid; */
+        background-color: white;
+        position: absolute;
+        left: 0;
+      }
+      .range-color2 {
+        width: 20%;
+        height: 100%;
+        background-color: #0097e6;
+        position: absolute;
+        left: 0;
+      }
+      */ .range-wrapper3 {
+        width: 100%;
+        /* margin: 0 0 0 30%; */
+        /* padding-top: 10px; */
+        margin-bottom: 1rem;
+      }
+      .range-container3 {
+        width: 40%;
+        height: 3px;
+
+        overflow: hidden;
+        position: relative;
+        margin-top: 2px;
+      }
+      .range-white3 {
+        width: 90%;
+        height: 100%;
+        /* border: 3px solid; */
+        background-color: white;
+        position: absolute;
+        left: 0;
+      }
+      .range-color3 {
+        width: 20%;
+        height: 100%;
+        background-color: #0097e6;
+        position: absolute;
+        left: 0;
+      }
+      */ .AllLang {
+        margin-bottom: 3rem;
+      }
+      .Education2 {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      .LangName {
+        font-size: 22px;
+      }
+      .Skills {
+        padding-left: 30px;
+        line-height: 1;
+        margin-bottom: 3.5rem;
+        /* font-size: 15px; */
+        overflow: hidden;
+        /* font-size: 23px; */
+      }
+
+      .SkillsHeading {
+        font-size: 20px;
+      }
+      .RangeWrapper {
+        width: 100%;
+        overflow: hidden;
+      }
+      .SkillsBox {
+        margin-top: 10px;
+
+        float: left;
+        line-height: 2;
+      }
+
+      .Skillss {
+        font-size: 15px;
+
+        padding: 0;
+        margin: 0;
+      }
+      .RightSide {
+        width: 70%;
+        float: right;
+        background-color: white;
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+      .Summary {
+        /* border: 1px solid red; */
+        width: 90%;
+      }
+      .SummaryHeading {
+        font-size: 1rem;
+      }
+      .SummaryPara {
+        font-size: 14px;
+        line-height: 1.1;
+        word-spacing: 2px;
+        margin-top: 0.8rem;
+      }
+      .ProfessionalExperience {
+        width: 90%;
+        /* border: 1px solid; */
+        margin-top: 1rem;
+      }
+      .ProfName {
+        font-size: 1rem;
+      }
+      .jobPositionName {
+        font-size: 15px;
+        /* padding-top: 10px; */
+        /* border: 1px solid; */
+        margin-top: 1rem;
+      }
+      .CompanyName {
+        width: 100%;
+        overflow: hidden;
+      }
+      .CompanyNameLocation {
+        float: left;
+        font-size: 15px;
+        margin: 5px 0 0 0;
+        font-weight: 500;
+      }
+      .Present {
+        float: right;
+        font-size: 17px;
+        margin: 0;
+      }
+      .jobListing {
+        /* margin-top: 1rem; */
+        font-size: 14px;
+        line-height: 1.2;
+        padding-left: 22px;
+      }
+      .jobListing li {
+        margin-bottom: 0.5rem;
+      }
+      .KeyRespon {
+        margin-top: 1rem;
+        font-size: 15px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      /* .jobListing li{
+  border: 1px solid red;
+
+} */
+      .ProjectsDetail {
+        width: 90%;
+        border: 1px soid red;
+        margin-top: 1rem;
+      }
+      .Projects {
+        font-size: 1.2rem;
+      }
+      .ProjectName {
+        overflow: hidden;
+      }
+      .ProjectLocation {
+        float: left;
+        font-size: 15px;
+        margin: 5px 0 0 0;
+        font-weight: 700;
+      }
+      .Present1 {
+        float: right;
+        font-size: 17px;
+        margin: 0;
+      }
+      .ProjectListing {
+        margin-top: 10px;
+      }
+      .Logo {
+        text-align: right;
+        padding-right: 40px;
+      }
+      .Logo img {
+        width: 20%;
+      }
+      .EducaionDetails {
+        width: 90%;
+        /* border: 1px solid; */
+        margin-top: 1rem;
+      }
+      .EduName1 {
+        font-size: 1.2rem;
+      }
+
+      .EducaName {
+        width: 100%;
+        overflow: hidden;
+      }
+      .EducaLocation {
+        float: left;
+        font-size: 15px;
+        margin: 5px 0 0 0;
+        font-weight: 500;
+      }
+      .EducPresent {
+        float: right;
+        font-size: 15px;
+        margin: 0;
+      }
+      .EduDetail {
+        margin-top: 0.7rem;
+      }
+      .jobPositionDetail {
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="MainWrapper">
+      <div class="HeaderWrapper">
+        <div class="HeaderName">
+          <h1 class="Name">{{user.first_name }} {{user.last_name}}</h1>
+          <p class="Profession">{% if seeker_info %} {{seeker_info.headline}} {% endif %}</p>
+        </div>
+        <div class="ProfileImage">
+            {% if user.image %}
+            <img
+            src="{{base_dir}}{{user.image}}"
+            alt="{{user.first_name}}-{{user.last_name}}-profile"
+          />
+          {% else %}
+          <img
+            src="{{base_dir}}/media/profile_images/default.jpg"
+            alt="profile image"
+          />
+          {% endif %}
+        </div>
+      </div>
+      <div class="ContentWrapper">
+        <div class="leftSide">
+          <div class="LeftSideWrapper">
+            <div class="contacts">
+              <h2 class="contacts1">CONTACT</h2>
+
+              <div class="range-wrapper">
+                <div class="range-container">
+                  <div class="range-white"></div>
+                  <div class="range-color"></div>
+                </div>
+              </div>
+
+              <div class="ContactDetails">
+                <p class="city">
+                    {{ seeker_info.city }}, {{seeker_info.country}}
+                </p>
+                <p class="number">{{ user.phone }}</p>
+                <p class="email">{{ user.email }}</p>
+              </div>
+            </div>
+
+            {% if ssl.skill %}
+            <div class="Skills">
+              <h2 class="SkillsHeading">KEY SKILLS</h2>
+              <div class="range-wrapper">
+                <div class="range-container">
+                  <div class="range-white"></div>
+                  <div class="range-color"></div>
+                </div>
+              </div>
+              <div class="RangeWrapper">
+                <div class="SkillsBox">
+                    {% for skill in ssl.skill %}
+                    <p>{{ skill.skill }} - {{ skill.level }}</p>
+                    {% endfor %}
+                </div>
+              </div>
+            </div>
+            {% endif %}
+
+            {% if ssl.language %}
+            <div class="Languages">
+              <h2 class="LangName">Languages</h2>
+              <div class="range-wrapper1">
+                <div class="range-container">
+                  <div class="range-white"></div>
+                  <div class="range-color"></div>
+                </div>
+              </div>
+              <div class="AllLang">
+                {% for lang in ssl.language %}
+                <p class="">{{ lang.skill }} - {{ lang.level }}</p>
+                {% endfor %}
+              </div>
+            </div>
+            {% endif %}
+
+          </div>
+        </div>
+
+        <div class="RightSide">
+            {% if ssl.summary %}
+          <div class="Summary">
+            <h1 class="SummaryHeading">PROFILE SUMMARY</h1>
+            <div class="range-wrapper2">
+              <div class="range-container2">
+                <div class="range-white2"></div>
+                <div class="range-color2"></div>
+              </div>
+            </div>
+            <p class="SummaryPara">
+                {{ssl.summary|safe}}
+            </p>
+          </div>
+          {% endif %}
+
+          {% if experience %}
+          <div class="ProfessionalExperience">
+            <div>
+              <h1 class="ProfName">PROFESSIONAL EXPERIENCE</h1>
+            </div>
+            <div class="range-wrapper2">
+              <div class="range-container2">
+                <div class="range-white2"></div>
+                <div class="range-color2"></div>
+              </div>
+            </div>
+
+            {% for job in experience%}
+            <div class="jobPosition">
+              <h3 class="jobPositionName"> {{job.company}}</h3>
+
+              <div class="CompanyName">
+                <p class="CompanyNameLocation">{{job.position}} </p>
+                <p class="Present">{{job.period_from}} - {% if job.period_to %}{{job.period_to }}
+                    {% else %}
+                    <span class="chip">Present</span>
+                    {% endif %}</p>
+              </div>
+              <div>
+                <p class="KeyRespon">Key Responsibilities</p>
+                <p>{{job.description|safe}}</p>
+
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+          {% endif %}
+
+          {% if qualification_data %}
+          <div class="EducaionDetails">
+            <div>
+              <h1 class="EduName1">Education</h1>
+              <div class="range-wrapper3">
+                <div class="range-container3">
+                  <div class="range-white3"></div>
+                  <div class="range-color3"></div>
+                </div>
+              </div>
+            </div>
+            {% for quali in qualification_data %}
+            <div class="jobPositionDetail">
+              <h3 class="EduDegree">{{quali.education_level}} / {{quali.degree}}</h3>
+              <div class="EducaName">
+                <p class="EducaLocation">{{quali.institute}}</p>
+                <p class="EducPresent">{{quali.start_period}} - {% if quali.complete_period%}
+                    {{quali.complete_period}} {% else %}<span class="chip"
+                      >Present</span
+                    >{% endif %}</p>
+              </div>
+            </div>
+            {% endfor %}
+            </div>
+          
+          {% endif %}
+
+          {% if projects %}
+          <div class="ProjectsDetail">
+            <h1 class="Projects">Your Projects</h1>
+            <div class="range-wrapper3">
+              <div class="range-container3">
+                <div class="range-white3"></div>
+                <div class="range-color3"></div>
+              </div>
+            </div>
+            {% for proja in projects%}
+            <div class="ProjectName">
+              <p class="ProjectLocation">{{proja.role}} | {{proja.title}}</p>
+              <p class="Present1">{{proja.url}}</p>
+            </div>
+            <p class="ProjectListing">
+                {{proja.description|safe}}
+            </p>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+        </div>
+      </div>
+      <div class="Logo">
+        <img
+          src="{{base_dir}}/media/images/logo-tranparent.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

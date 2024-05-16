@@ -1,0 +1,20 @@
+<form method="post">
+  {% csrf_token %}
+
+  <form method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="MGbPPMZym10Kthvv17SKvqPOTs92Q2Qq5NslBFbuXGqrWgVKtcOcqSs73UE1qZzE">
+    <p>
+      <label for="id_email">Email:</label>
+      <input type="text" name="email" autofocus="" autocapitalize="none" autocomplete="email" maxlength="150" required="" id="id_email">
+    </p>
+
+    <p>
+      <label for="id_password">Password:</label>
+      <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+
+    </p>
+    <button type="submit">Login</button>
+  </form>
+  {% comment %} {{ form.as_p }}
+  <button type="submit">Login</button> {% endcomment %}
+</form>

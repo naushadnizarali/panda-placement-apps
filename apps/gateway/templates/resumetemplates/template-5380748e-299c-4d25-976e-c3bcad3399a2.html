@@ -1,0 +1,256 @@
+<!-- 
+5380748e-299c-4d25-976e-c3bcad3399a2
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PandaPlacement-Resume</title>
+
+    <style>
+      .MainWrapper {
+        width: 100%;
+        height: 100%;
+        border: 1px solid;
+        margin: auto;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+      }
+      .Wrappers {
+        /* border: 1px solid blue; */
+        width: 100%;
+        background-color: #ecf0f1;
+        overflow: hidden;
+      }
+      .UserIntro {
+        width: 70%;
+        float: left;
+        /* padding-left: 20px; */
+      }
+      .infowrapwer{
+
+          padding-right: 30px;
+      }
+      .Name {
+        padding-left: 30px;
+      }
+      .Profession {
+        padding-left: 30px;
+      }
+
+      .Address {
+        font-weight: 700;
+        float: right;
+        width: 30%;
+        text-align: right;
+      }
+      .Address p {
+        padding-right: 10px;
+      }
+
+      .AddressCity {
+        padding: 0;
+      }
+      .HeaderPara {
+        font-size: 17px;
+        padding: 0px 30px;
+        margin: 0 0 15px 0;
+        display: inline-block;
+      }
+      .DownWrapper {
+        width: 100%;
+      }
+      ul {
+        padding: 0 0 0 20px;
+        list-style: square;
+      }
+      li {
+        padding-top: 10px;
+      }
+      .Skills {
+        width: 100%;
+        overflow: hidden;
+      }
+      .listWrapper {
+        padding-left: 30px;
+      }
+      .SkillsHeading {
+        font-size: 17px;
+        margin: 10px 0 0 0;
+      }
+      .SkillsParagraph {
+        font-size: 17px;
+      }
+
+      .SkillsList li {
+        width: 33.333%;
+        float: left;
+        margin-bottom: 5px;
+      }
+
+      .Experience {
+        width: 100%;
+        padding: 0 30px;
+      }
+      .ExperienceHeading {
+        font-size: 17px;
+        margin: 10px 0 0 0;
+      }
+      .CompanyName {
+        font-size: 15px;
+        margin: 0;
+      }
+      .Present {
+        font-size: 13px;
+        margin: 5px 0 0 0;
+      }
+      .Education {
+        padding: 0 30px;
+      }
+      .EducationHeading {
+        font-size: 17px;
+        margin: 10px 0 0 0;
+      }
+      .EduDegree {
+        font-size: 15px;
+        margin: 0;
+      }
+      .EduPresent {
+        font-size: 13px;
+        margin: 5px 0 0 0;
+      }
+      .Logo {
+        text-align: right;
+        padding-right: 30px;
+      }
+      .Logo img {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="MainWrapper">
+      <div class="Wrappers">
+        <div class="infowrapwer">
+          <div class="UserIntro">
+            <h1 class="Name">{{user.first_name }} {{user.last_name}}</h1>
+            <h4 class="Profession">{{seeker_info.headline}}</h4>
+          </div>
+          <div class="Address">
+            <p class="AddressCity">
+              {{ seeker_info.city }}, {{seeker_info.country}}
+            </p>
+            <p class="AddressContact">{{ user.phone }}</p>
+            <p class="AddresssEmail">{{ user.email }}</p>
+          </div>
+        </div>
+        <br>
+            <p class="HeaderPara">{{ssl.summary|safe}}</p>
+
+      </div>
+      <div class="DownWrapper">
+        {% if ssl.skill %}
+        <section class="Skills">
+          <div class="listWrapper">
+            <h1 class="SkillsHeading">KEY SKILLS</h1>
+            <hr />
+            <ul class="SkillsList">
+              {% for skill in ssl.skill %}
+              <li>{{ skill.skill }} - {{ skill.level }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+        {% endif %} {% if ssl.language %}
+        <section class="Skills">
+          <div class="listWrapper">
+            <h1 class="SkillsHeading">Language</h1>
+            <hr />
+            <ul class="SkillsList">
+              {% for lang in ssl.language %}
+              <li>{{ lang.skill }} - {{ lang.level }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+        {% endif %} {% if experience %}
+        <section class="Experience">
+          <div>
+            <h1 class="ExperienceHeading">PROFESSIONAL EXPERIENCE</h1>
+          </div>
+          <hr />
+          {% for job in experience%}
+          <div>
+            <div class="ExpHeader">
+              <h3 class="CompanyName">{{job.company}}</h3>
+              <p class="Present">
+                {{job.company}} |
+                <span
+                  >{{job.period_from}} - {% if job.period_to %}{{job.period_to}}
+                  {% else %}
+                  <span>Present</span>
+                  {% endif %}</span
+                >
+              </p>
+            </div>
+            <ul>
+              <li>{{job.description|safe}}</li>
+            </ul>
+          </div>
+          {% endfor %}
+        </section>
+        {% endif %} {% if qualification_data %}
+        <section class="Education">
+          <div>
+            <h1 class="EducationHeading">Education</h1>
+          </div>
+          <hr />
+          {% for quali in qualification_data %}
+          <div>
+            <div class="EduHeader">
+              <h3 class="EduDegree">{{quali.degree}} / {{quali.institute}}</h3>
+              <p class="EduPresent">
+                {{quali.education_level}} |
+                <span
+                  >{{quali.start_period}} - {% if quali.complete_period%}
+                  {{quali.complete_period}} {% else %}<span>Present</span>{%endif %}</span
+                >
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </section>
+        {% endif %} 
+        
+        {% if projects %}
+        <section class="Education">
+          <div>
+            <h1 class="EducationHeading">Projects</h1>
+          </div>
+          <hr />
+          {% for proja in projects%}
+          <div>
+            <div class="EduHeader">
+              <h3 class="EduDegree">{{proja.title}}</h3>
+              <p class="EduPresent">
+                {{proja.role}} | <span>{{proja.url}}</span>
+              </p>
+            </div>
+            <ul>
+              <li>{{proja.description|safe}}</li>
+            </ul>
+          </div>
+          {% endfor %}
+        </section>
+        {% endif %}
+      </div>
+      <div class="Logo">
+        <img
+          src="{{base_dir}}/media/images/logo-tranparent.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

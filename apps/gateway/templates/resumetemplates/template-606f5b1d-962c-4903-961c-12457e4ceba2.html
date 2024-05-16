@@ -1,0 +1,454 @@
+<!-- 
+606f5b1d-962c-4903-961c-12457e4ceba2
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PandaPlacement-Resume</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .MainWrapper {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+      }
+      .WrapperHeader {
+        width: 100%;
+        height: 230px;
+      }
+      .WrapperDetails {
+        width: 70%;
+        height: 100%;
+        background-color: #22a6b3;
+        color: white;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        float: left;
+        font-size: 20px;
+      }
+      .WrapperDetails h1 {
+        
+        padding: 4.3rem 0 0 3rem;
+      }
+      .WrapperDetails p {
+        padding-left: 3rem;
+      }
+      .WrapperImage {
+        width: 30%;
+        height: 100%;
+        float: right;
+        text-align: center;
+        background-color: black;
+      }
+      .WrapperImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* margin-top: 40px; */
+        /* margin-left: 3rem; */
+      }
+      .SectionsWrapper {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      /* LeftSide */
+      .LeftSide {
+        width: 70%;
+        height: 100%;
+        /* border: 1px solid red; */
+        padding-left: 3rem;
+        padding-top: 1.5rem;
+        float: left;
+      }
+
+      .RadiusWrapper {
+        overflow: hidden;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      .Radius {
+        float: left;
+        border-radius: 50%;
+        padding: 0.2rem 0.7rem;
+        background-color: #22a6b3;
+        color: white;
+      }
+      .PSumm {
+        padding-left: 10px;
+        font-size: 1.2rem;
+        float: left;
+      }
+      .Summarypara {
+        font-size: 15px;
+        padding-right: 50px;
+        margin-top: 0.5rem;
+      }
+
+      .ProExper {
+        margin-top: 1.5rem;
+        margin-right: 50px;
+      }
+
+      .ExperPSumm {
+        padding-left: 5px;
+        font-size: 1.2rem;
+        float: left;
+      }
+      .ExperJobDetail {
+        overflow: hidden;
+        width: 100%;
+        margin-top: 0.2rem;
+        /* border: 1px solid red; */
+      }
+
+      .ExperCompanyName {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .ExperJobDetail h1 {
+        float: left;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      .ExperJobDetail .duration {
+        float: right;
+        margin: 0;
+        padding: 0;
+      }
+      .ExperResponse {
+        margin-top: 0.5rem;
+      }
+      .ExperResponseList {
+        padding-left: 15px;
+        margin-top: 0.3rem;
+      }
+      .ExperResponseList li {
+        margin-bottom: 0.5rem;
+        font-size: 15px;
+      }
+
+      .Projects {
+        margin-top: 1rem;
+        margin-right: 50px;
+        margin-bottom: 1rem;
+      }
+      .ProjectSum {
+        overflow: hidden;
+        text-align: center;
+        /* border: 1px solid red; */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      .ProjectSum {
+        overflow: hidden;
+      }
+      .ProjectSumm {
+        padding-left: 5px;
+        float: left;
+        font-size: 1.2rem;
+      }
+      .Projectpara {
+        margin-top: 0.5rem;
+        font-size: 15px;
+      }
+
+      /* RightSide */
+      .RightSide {
+        width: 30%;
+        height: 100%;
+        /* border: 1px solid red; */
+        padding-left: 1.3rem;
+        padding-top: 1.5rem;
+        float: right;
+        background-color: #bdc3c7;
+      }
+      .Contcs {
+        margin-bottom: 1.5rem;
+      }
+      .Contact {
+        overflow: hidden;
+        text-align: center;
+        /* border: 1px solid red; */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      .ContactHeading {
+        padding-left: 5px;
+        float: left;
+        font-size: 1.2rem;
+      }
+      .contactDetails {
+        margin-top: 0.5rem;
+        line-height: 1.4;
+        font-size: 12px;
+      }
+      .ContactList {
+        /* border: 1px solid red; */
+        padding-left: 20px;
+        line-height: 1.5;
+      }
+
+      .Skills {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .Skil {
+        overflow: hidden;
+        text-align: center;
+        /* border: 1px solid red; */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      .SkillHeading {
+        padding-left: 5px;
+        float: left;
+        font-size: 1.2rem;
+      }
+      .SkillDetails {
+        margin-top: 0.5rem;
+        line-height: 1.4;
+      }
+      .SkillList {
+        /* border: 1px solid red; */
+        padding-left: 20px;
+        line-height: 1.5;
+      }
+      .Education {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .EducaHeading {
+        padding-left: 5px;
+        float: left;
+        font-size: 1.2rem;
+      }
+      .EucationDetail {
+        margin-top: 0.5rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      .EucationDetail h3 {
+        font-size: 1rem;
+      }
+
+      .range-wrapper1 {
+        width: 30%;
+        margin-bottom: 0.5rem;
+      }
+      .range-container {
+        width: 30%;
+        height: 3px;
+
+        overflow: hidden;
+        position: relative;
+        margin-top: 4px;
+      }
+      .range-white {
+        width: 90%;
+        height: 100%;
+        /* border: 3px solid; */
+        background-color: white;
+        position: absolute;
+        left: 0;
+      }
+      .range-color {
+        width: 100%;
+        height: 100%;
+        background-color: #22a6b3;
+        position: absolute;
+        left: 0;
+      }
+
+      .Logo {
+        /* border: 1px solid; */
+        text-align: right;
+        padding-right: 30px;
+        padding-top: 1.5rem;
+      }
+      .Logo img {
+        width: 20%;
+      }
+      .Languages {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+      .LangList {
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="MainWrapper">
+      <div class="WrapperHeader">
+        <div class="WrapperDetails">
+          <h1>{{user.first_name }} {{user.last_name}}</h1>
+          <p>{% if seeker_info %} {{seeker_info.headline}} {% endif %}</p>
+        </div>
+        <div class="WrapperImage">
+          {% if user.image %}
+          <img
+            src="{{base_dir}}{{user.image}}"
+            style="width: 100%"
+            alt="{{user.first_name}}-{{user.last_name}}-profile"
+          />
+          {% else %}
+          <img
+            src="{{base_dir}}/media/profile_images/default.jpg"
+            style="width: 100%"
+            alt="profile image"
+          />
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="SectionsWrapper">
+        <div class="LeftSide">
+          {% if ssl.summary %}
+          <div class="ProSummmary">
+            <div class="RadiusWrapper">
+              <div class="Radius">S</div>
+              <h1 class="PSumm">Profile Summary</h1>
+            </div>
+            <p class="Summarypara">{{ssl.summary|safe}}</p>
+          </div>
+          {% endif %} {% if experience %}
+          <div class="ProExper">
+            <div>
+              <div class="RadiusWrapper">
+                <div class="Radius">E</div>
+                <h1 class="ExperPSumm">Professional Experience</h1>
+              </div>
+              <div>
+                {% for job in experience%}
+                <div class="ExperDetails">
+                  <h1 class="ExperCompanyName">{{job.company}}</h1>
+                  <div class="ExperJobDetail">
+                    <h1>{{job.position}}</h1>
+                    <p class="duration">
+                      {{job.period_from}} - {% if job.period_to%}{{job.period_to }} {% else %}
+                      <span class="chip">Present</span>
+                      {% endif %}
+                    </p>
+                  </div>
+                  <p><strong>About: </strong>{{job.description|safe}}</p>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endif %} {% if projects %}
+          <div class="Projects">
+            <div class="ProjectSum">
+              <div class="Radius">P</div>
+              <h1 class="ProjectSumm">Projects</h1>
+            </div>
+            {% for proja in projects%}
+            <div class="ExperJobDetail">
+              <p>Title: <strong>{{proja.title}}</strong></p>
+              <p>Role: <strong>{{proja.role}}</strong></p>
+            </div>
+            <p class="Projectpara">{{proja.description|safe}}</p>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="RightSide">
+          <div class="Contcs">
+            <div class="RadiusWrapper">
+              <div class="Radius">C</div>
+              <h1 class="ContactHeading">Contact</h1>
+            </div>
+            <div class="contactDetails">
+              <p>
+                {% if seeker_info %} {{ seeker_info.city }},
+                {{seeker_info.country}} {% endif %}
+              </p>
+              <p>{{ user.phone }}</p>
+              <p>{{ user.email }}</p>
+            </div>
+          </div>
+          {% if ssl.skill %}
+          <div class="Skills">
+            <div class="RadiusWrapper">
+              <div class="Radius">S</div>
+              <h1 class="SkillHeading">Key Skills</h1>
+            </div>
+            <div class="SkillDetails">
+              <ul class="SkillList">
+                {% for skill in ssl.skill %}
+                <li class="">{{ skill.skill }} - {{ skill.level }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          {% endif %} {% if qualification_data %}
+          <div class="Education">
+            <div class="RadiusWrapper">
+              <div class="Radius">E</div>
+              <h1 class="EducaHeading">Education</h1>
+            </div>
+            {% for quali in qualification_data %}
+            <div class="EucationDetail">
+              <h3>Degree: {{quali.degree}}</h3>
+              <div>
+                <p>{{quali.institute}}, {{quali.location}}</p>
+                <div class="range-wrapper1">
+                  <div class="range-container">
+                    <div class="range-white"></div>
+                    <div class="range-color"></div>
+                  </div>
+                </div>
+              </div>
+              <p>
+                {{quali.start_period}} - {% if quali.complete_period%}
+                {{quali.complete_period}} {% else %}<span class="chip"
+                  >Present</span
+                >{% endif %}
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %} {% if ssl.language %}
+          <div class="Languages">
+            <div class="Skil">
+              <div class="Radius">L</div>
+              <h1 class="EducaHeading">Languages</h1>
+            </div>
+            <div class="LangList">
+              {% for lang in ssl.language %}
+              <h5 class="chip">{{ lang.skill }} - {{ lang.level }}</h5>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="Logo">
+        <img src="{{base_dir}}/media/images/logo-tranparent.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

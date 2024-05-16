@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Application Shortlisted</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f3f3f3;
+            font-family: Poppins;
+            font-size: 16px;
+        }
+        .main-wrapper {
+            padding: 25px 0 0 0;
+            width: 100%;
+            display: flex;
+            margin: auto;
+
+        }
+        .email-content {
+            margin: auto;
+            max-width: 750px;
+            min-width: 350px;
+            background-color: white;
+            padding: 5px 25px 25px 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="email-content">
+            <div style="margin: 30px 0">
+                <a href="#" target="_blank" style="display: block; max-width: 128px">
+                    <img src="{{domain}}/media/images/logo.jpg" alt="img" width="128" border="0" style="display: block; width: 128px">
+                </a>
+            </div>
+            <p style="font-family: 'Poppins', sans-serif; color: #1a1a1a; line-height: 60px; font-weight: 600; letter-spacing: 0px;">
+                Dear {{ user.first_name }} {{ user.last_name }},
+            </p>
+            <p>Congratulations! Your application for {{job_title}} has been shortlisted for further consideration.</p>
+
+            <p>
+                Click
+                <a
+                  href="{{ job_link }}"
+                  style="
+                    text-decoration: none;
+                    color: #bcd14e;
+                    font-family: Poppins;
+                    font-weight: 600;
+                  "
+                  >Here
+                </a>
+                to view the job details on PandaPlacement.
+              </p>
+
+            <p>If you have any questions, please contact our support team at <a href="mailto:support@pandaplacement.com" style="text-decoration: none; color: #bcd14e; font-family: Poppins; font-weight: 600;">support@pandaplacement.com</a>
+            </p>
+        </div>
+    </div>
+    <div style="padding: 25px 0 25px 0; font-family: Poppins; background: #f3f3f3; flex-wrap: wrap; margin: auto; width: 100%;">
+        <div style="justify-content: space-between; width: 100%; text-align: center;">
+            <span style="font-weight: bold">HELP CENTER</span>
+            <span style="font-weight: bold">&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+            <span style="font-weight: bold">SUPPORT 24/7</span>
+            <span style="font-weight: bold">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+            <span style="font-weight: bold">ACCOUNT</span>
+        </div>
+        <div style="line-height: 20px; width: 100%; text-align: center">
+            <br />
+            <span style="font-family: Poppins; color: #868686; line-height: 20px;">Designed by PandaPlacement &copy;</span>
+        </div>
+        <div style="justify-content: space-between; margin: 5px 0; width: 100%; text-align: center;">
+            <a style="text-decoration: none; color: #1a1a1a" href="mailto:support@pandaplacement.com">support@pandaplacement.com</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a style="text-decoration: none; color: #1a1a1a" href="">+1 (789) 6543214</a>
+        </div>
+        <div style="text-align: center; margin: 20px 0">
+            <a href="#" target="_blank" style="max-width: 25px; margin: 0 15px; text-decoration: none; color: black;">
+                <img src="https://i.imgur.com/pqpvluz.png" alt="img" width="25" border="0" style="width: 25px">
+            </a>
+            <a href="#" target="_blank" style="max-width: 25px; margin: 0 15px; text-decoration: none; color: black;">
+                <img src="https://i.imgur.com/YHSbvKs.png" alt="img" width="25" border="0" style="width: 25px">
+            </a>
+            <a href="#" target="_blank" style="max-width: 25px; margin: 0 15px; text-decoration: none; color: black;">
+                <img src="https://i.imgur.com/rnIBIWc.png" alt="img" width="25" border="0" style="width: 25px">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

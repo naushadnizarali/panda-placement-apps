@@ -1,0 +1,349 @@
+<!-- 
+4d413c2a-e1d7-4c0f-9efc-1570b4e3e7d0
+-->
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>PandaPlacement-Resume</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css"
+      media="all"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 80%;
+        margin: auto;
+        height: 100%;
+        font-family: Georgia;
+        color: #444;
+      }
+      #inner {
+        padding: 10px 80px;
+        margin: 10px auto;
+        background: #f5f5f5;
+        /* border: solid #666;
+        border-width: 8px 0 2px 0; */
+      }
+      .yui-gf {
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #ccc;
+      } /* //-- header, body, footer -- */
+      #hd {
+        margin: 2.5em 0 3em 0;
+        padding-bottom: 1.5em;
+        border-bottom: 1px solid #ccc;
+      }
+      #hd h2 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #bd,
+      #ft {
+        margin-bottom: 2em;
+      } /* //-- footer -- */
+      #ft {
+        padding: 1em 0 5em 0;
+        font-size: 92%;
+        border-top: 1px solid #ccc;
+        text-align: center;
+      }
+      #ft p {
+        margin-bottom: 0;
+        text-align: center;
+      } /* //-- core typography and style -- */
+      #hd h1 {
+        font-size: 48px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+      h2 {
+        font-size: 152%;
+      }
+      h3,
+      h4 {
+        font-size: 122%;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #333;
+      }
+      p {
+        font-size: 100%;
+        line-height: 18px;
+        padding-right: 3em;
+      }
+      a {
+        color: #990003;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      strong {
+        font-weight: bold;
+      }
+      li {
+        line-height: 24px;
+        border-bottom: 1px solid #ccc;
+      }
+      p.enlarge {
+        font-size: 144%;
+        padding-right: 3em;
+        line-height: 24px;
+      }
+      .contact-info {
+        margin-top: 7px;
+      }
+      .first h2 {
+        font-style: italic;
+      }
+      .last {
+        border-bottom: 0;
+      }
+      a#pdf {
+        display: block;
+        float: left;
+        background: #666;
+        color: white;
+        padding: 6px 50px 6px 12px;
+        margin-bottom: 6px;
+        text-decoration: none;
+      }
+      a#pdf:hover {
+        background: #222;
+      }
+
+      .yui-u:last-child {
+        border: none;
+      }
+
+      .task {
+        position: relative;
+        margin-bottom: 1em;
+        padding-bottom: 3em;
+        border-bottom: 1px solid #ccc;
+      }
+      .task h3 {
+        width: 60%;
+        float: left;
+        /* border: 1px solid red; */
+      }
+      .task p {
+        margin: 0.75em 0 1em 0;
+      }
+      .task h4 {
+        width: 40%;
+        /* border: 1px solid blue; */
+        float: right;
+      }
+
+      .last {
+        border: none;
+        margin-bottom: 0;
+      }
+      .skills-list {
+      }
+      .skills-list ul {
+        margin: 0;
+      }
+      .skills-list li {
+        margin: 3px 0;
+        padding: 3px 0;
+      }
+      .skills-list li span {
+        font-size: 152%;
+        display: block;
+        margin-bottom: -2px;
+        padding: 0;
+      }
+      .talent {
+        width: 32%;
+        float: left;
+      }
+      .talent h2 {
+        margin-bottom: 6px;
+      }
+      .yui-gf .yui-u {
+        width: 80.2%;
+      }
+      .yui-gf div.first {
+        width: 12.3%;
+      }
+
+      .Logo {
+        text-align: right;
+        padding-right: 40px;
+      }
+      .Logo img {
+        width: 20%;
+        mix-blend-mode: multiply;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="doc3" class="yui-t7">
+      <div id="inner">
+        <div id="hd">
+          <div class="yui-gc">
+            <div class="yui-u first">
+              <h1>{{user.first_name }} {{user.last_name}}</h1>
+
+              {% if seeker_info %}
+              <h2>{{seeker_info.headline}}</h2>
+              {% endif %}
+            </div>
+
+            <div class="yui-u">
+              <div class="contact-info">
+                <h3>
+                  Email:
+                  <a href="mailto:{{user.email}}">{{ user.email }}</a>
+                </h3>
+                <h3>Phone: {{ user.phone }}</h3>
+                {% if seeker_info %}
+                <h3>City: {{ seeker_info.city }}</h3>
+                <h3>Resident-City: {{ seeker_info.area_of_residence }}</h3>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bd">
+          <div id="yui-main">
+            <div class="yui-b">
+              {% if ssl.summary %}
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Objective</h2>
+                </div>
+                <div class="yui-u">
+                  <p class="enlarge">{{ssl.summary|safe}}</p>
+                </div>
+              </div>
+              {% endif %} {% if experience %}
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Experience</h2>
+                </div>
+
+                <div class="yui-u">
+                  {% for job in experience%}
+
+                  <div class="task">
+                    <h2>{{job.company}}</h2>
+                    <h3>{{job.position}}</h3>
+                    <h4>
+                      {{job.period_from}}-{% if job.period_to %}
+                      {{job.period_to}} {% else %}Present{% endif %}
+                    </h4>
+                    <p>{{job.description|safe}}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endif %} {% if qualification %}
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Education</h2>
+                </div>
+
+                {% for quali in qualification_data %}
+                <div class="yui-u">
+                  <div class="task">
+                    <h2>{{quali.institute}} &mdash; {{quali.location}}</h2>
+                    <h3>{{quali.degree}}</h3>
+                    <h4>
+                      {{quali.start_period}} &mdash; {% if quali.complete_period%} {{quali.complete_period}} {% else %}Present{% endif %}
+                    </h4>
+                  </div>
+                </div>
+
+                {% endfor %}
+              </div>
+              {% endif %} {% if projects %}
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Project</h2>
+                </div>
+
+                <div class="yui-u">
+                  {% for proja in projects%}
+
+                  <div class="task">
+                    <h2>{{proja.title}}</h2>
+                    <h3>{{proja.role}}</h3>
+                    <h4>{{proja.url}}</h4>
+                    <p>{{proja.description|safe}}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endif %} {% if ssl.skill %}
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Skills</h2>
+                </div>
+                <div class="yui-u last">
+                  {% for skill in ssl.skill %}
+                  <ul class="talent">
+                    <li class="last">{{ skill.skill }} - {{ skill.level }}</li>
+                  </ul>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endif %} {% if ssl.language %}
+              <div class="yui-gf last">
+                <div class="yui-u first">
+                  <h2>Language</h2>
+                </div>
+                <div class="yui-u last">
+                  {% for lang in ssl.language %}
+                  <ul class="talent">
+                    <li class="last">{{ lang.skill }} - {{ lang.level }}</li>
+                  </ul>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+        <div id="ft">
+          <p>
+            {{user.first_name }} {{user.last_name}} &mdash;
+            <a href="mailto:{{ user.email }}">{{ user.email }}</a> &mdash; {{user.phone }}
+          </p>
+        </div>
+
+        <div class="Logo">
+          <img src="{{base_dir}}/media/images/logo.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
